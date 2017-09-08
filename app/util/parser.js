@@ -94,7 +94,8 @@ module.exports = (url, includeList, excludeList) => {
       return xmlescape(ret)
     })
     .then((response) => {
-      let arrRes = response.join('</p><p>')
-      return `<p>${arrRes}</p>`
+      // let arrRes = response.join('</p><p>')
+      // return `<p>${arrRes}</p>`
+      return response[0]
     })
 }
