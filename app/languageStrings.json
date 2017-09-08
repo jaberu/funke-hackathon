@@ -77,13 +77,13 @@
       "DIALOGUE" : "<audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_error.mp3\" /> Es tut mir leid, aber ich kann die Artikel für diese Rubrik nicht erreichen. Möchtest du die Rubriken durchsuchen oder dir neusten Artikel hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "HELP_START" : {
-      "DIALOGUE" : "Mit %%SKILL_NAME%% kannst du einfach ale neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchsuchen oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "DIALOGUE" : "Mit %%SKILL_NAME%% kannst du einfach alle neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchsuchen oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "HELP_BROWSE" : {
       "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir eine Rubrik von Überschriften festzulegen, an denen du interessiert bist. Du kannst aus diesen Rubriken auswählen: %%CATEGORY_LIST%%. Oder falls du dir die neusten Nachrichten anhören möchtest, kannst du etwas sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "HELP_BROWSE_GUIDE" : {
-      "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger um dich zwischen den Überschriften zu bewegen, oder du kannst sagen: lese mir den kompletten Artikel vor oder mehr hören um den kompletten Artikel zu hören. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger sagen, um dich zwischen den Artikeln zu bewegen, oder du kannst sagen: lese mir den Artikel vor oder mehr sagen um den Artikel zu hören. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "EXIT_CONFIRM" : {
       "DIALOGUE" : "Okay danke dass du %%SKILL_NAME%% benutzt hast. Auf Wiedersehen! <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_exit.mp3\" />"
