@@ -31,6 +31,13 @@ module.exports = {
               'neueste Nachrichten',
               'neueste'
             ]
+        },
+        video: {
+            URI: 'videos/?service=Rss',
+            synonyms: [
+                'Videos',
+                'video'
+            ]
         }
     }
 };
