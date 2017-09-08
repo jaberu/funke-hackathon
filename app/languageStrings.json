@@ -20,10 +20,10 @@
     "LATEST_NEWS" : {
       "DIALOGUE" : "Hier ist die neueste Nachricht von Funkenews:",
       "CARD_TITLE" : "Neueste Nachricht",
-      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von funkenews. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
+      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von Funkenews. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
     },
     "STORY_LIST_START" : {
-      "DIALOGUE" : "TEs gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
+      "DIALOGUE" : "Es gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel zu %%HEADLINE%% vorlesen. Oder du springst zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_NEXT" : {
@@ -65,7 +65,7 @@
       "REPROMPT" : "Bitte wähle eine Rubrik aus Berlin, Politik oder Wirtschaft, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?"
     },
     "AUDIO_PLAYBACK_ERROR" : {
-      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du dir Rubriken durchstöbern."
+      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du die Rubriken durchstöbern."
     },
     "AUDIO_PLAYBACK_PREVIOUS_STORY_ERROR" : {
       "DIALOGUE" : "Es tut mir leid. Es gibt keinen vorigen Artikel."
