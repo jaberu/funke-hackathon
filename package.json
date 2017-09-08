@@ -15,6 +15,7 @@
     "request": "^2.81.0",
     "sax": "^1.2.4",
     "superagent": "^3.6.0",
+    "xml-escape": "^1.1.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {

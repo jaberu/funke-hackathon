@@ -16,6 +16,7 @@ parser(article, ['body.content', 'p'], ['media'])
 const request = require('superagent')
 const sax = require('sax')
 const Promise = require('bluebird')
+const xmlescape = require('xml-escape')
 
 function parseBackendResponse (response) {
   return new Promise((resolve, reject) => {
@@ -36,10 +37,10 @@ function parseBackendResponse (response) {
       }
     }
     parser.onopentag = function (node) {
-      if (node.name === "media") {
-          if (node.attr("display-option") === "brightcove") {
-              media[] = node.attr("video-id")
-          }
+      if (node.name === 'media') {
+        if (node.attributes['display-option'] === 'brightcove') {
+          media.push(node.attr('video-id'))
+        }
         ignore = true
         ignoreTag = node.name
       } else if (!ignore && (node.name === 'body.content' || node.name === 'p')) {
@@ -69,9 +70,9 @@ function parseBackendResponse (response) {
     parser.onend = function () {
       // parser stream is done, and ready to have more stuff written to it.
       return resolve({
-            text : result,
-            videos : media
-          })
+        text: result,
+        videos: media
+      })
     }
 
     parser.write(response).close()
@@ -91,13 +92,22 @@ module.exports = (url, includeList, excludeList) => {
       })
   })
     .then((response) => {
-      return parseBackendResponse(response, includeList, excludeList)
-    })
-    .map((item) => {
-      return item.replace(/\s\s+/g, ' ')
+      return parseBackendResponse(response)
     })
     .then((response) => {
-      let arrRes = response.join('</p><p>')
-      return `<p>${arrRes}</p>`
+      let parsedText = response.text.map((item) => {
+        let ret = item.replace(/\s\s+/g, ' ')
+        return xmlescape(ret)
+      })
+      // parsedText = parsedText.join('</p><p>')
+      if (parsedText.length > 1) {
+        parsedText = `${parsedText[0]}</p><p>${parsedText[1]}`
+      } else if (parsedText.length === 1) {
+        parsedText = parsedText[0]
+      }
+      return {
+        videos: response.videos,
+        text: `<p>${parsedText}</p>`
+      }
     })
 }
