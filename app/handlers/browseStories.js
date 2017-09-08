@@ -226,18 +226,6 @@ let browseStories = {
     let repromptSpeech = strings.get(this).CATEGORY_SELECTION_ERROR.REPROMPT
     alexaResponse.ask(outputSpeech, repromptSpeech).call(this)
   },
-  latestNews: function () {
-        // change state and forward request to MAIN_MENU LatestNewsIntent
-    //this.handler.state = constants.states.MAIN_MENU
-    //this.emitWithState('LatestNewsIntent')
-
-    if (!intent.slots) {
-      intent.slots = {}
-    }
-    
-    intent.slots.category = "neueste"
-    this.emitWithState('BrowseStoriesIntent')
-  },
   help: function () {
         // offer the user context sensitive browsing help
         // based on if they have currentHeadlines
@@ -327,7 +315,6 @@ module.exports = {
   'LaunchRequest': browseStories.launch,
   'SessionEndedRequest': browseStories.cancel,
   'Unhandled': browseStories.unhandled,
-  'LatestNewsIntent': browseStories.latestNews,
   'CategoryOnlyIntent': browseStories.browseStories,
   'BrowseStoriesIntent': browseStories.browseStories,
   'FullStoryIntent': browseStories.fullStory,
