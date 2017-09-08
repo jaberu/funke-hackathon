@@ -1,0 +1,129 @@
+LatestNewsIntent  the latest
+LatestNewsIntent  what's the latest
+LatestNewsIntent  the latest news
+LatestNewsIntent  the latest news story
+LatestNewsIntent  the recent news
+LatestNewsIntent  the current news
+LatestNewsIntent  the most recent news story
+LatestNewsIntent  the most current news story
+LatestNewsIntent  latest news
+LatestNewsIntent  latest news story
+LatestNewsIntent  {desire} latest news
+LatestNewsIntent  {desire} latest news story
+LatestNewsIntent  recent news
+LatestNewsIntent  current news
+LatestNewsIntent  {desire} recent news
+LatestNewsIntent  {desire} current news
+LatestNewsIntent  recent news story
+LatestNewsIntent  current news story
+LatestNewsIntent  {desire} recent news story
+LatestNewsIntent  {desire} current news story
+
+CategoryOnlyIntent  {category}
+
+BrowseStoriesIntent  browse
+BrowseStoriesIntent  category
+BrowseStoriesIntent  categories
+BrowseStoriesIntent  stories
+BrowseStoriesIntent  {category} news
+BrowseStoriesIntent  {category} news stories
+BrowseStoriesIntent  {category} news headlines
+BrowseStoriesIntent  {desire} {category} news
+BrowseStoriesIntent  {desire} {category} news stories
+BrowseStoriesIntent  {desire} {category} headlines
+BrowseStoriesIntent  {desire} {category} articles
+BrowseStoriesIntent  browse stories
+BrowseStoriesIntent  browse categories
+BrowseStoriesIntent  the category
+BrowseStoriesIntent  the categories
+BrowseStoriesIntent  the stories
+BrowseStoriesIntent  the headlines
+BrowseStoriesIntent  {category} stories
+BrowseStoriesIntent  {category} headlines
+BrowseStoriesIntent  stories about {category}
+BrowseStoriesIntent  headlines about {category}
+BrowseStoriesIntent  {desire} {category}
+BrowseStoriesIntent  {desire} {category} stories
+BrowseStoriesIntent  {desire} stories by category
+BrowseStoriesIntent  browse stories by category
+BrowseStoriesIntent  what are the categories
+BrowseStoriesIntent  what are categories
+BrowseStoriesIntent  which categories
+BrowseStoriesIntent  which categories can i pick
+BrowseStoriesIntent  which categories can i choose from
+BrowseStoriesIntent  what categories are there
+BrowseStoriesIntent  what categories can i choose
+
+FullStoryIntent  the full story
+FullStoryIntent  full story
+FullStoryIntent  the full article
+FullStoryIntent  full article
+FullStoryIntent  the full text
+FullStoryIntent  full text
+FullStoryIntent  the whole story
+FullStoryIntent  whole story
+FullStoryIntent  the whole article
+FullStoryIntent  whole article
+FullStoryIntent  hear more
+FullStoryIntent  more
+FullStoryIntent  {desire} full story
+FullStoryIntent  i want to hear more
+FullStoryIntent  i want more
+FullStoryIntent  {desire} full article
+FullStoryIntent  read me more
+
+NextStoryIntent  the next story
+NextStoryIntent  the next headline
+NextStoryIntent  next story
+NextStoryIntent  next headline
+NextStoryIntent  next article
+NextStoryIntent  the next article
+NextStoryIntent  {desire} next story
+NextStoryIntent  {desire} next headline
+NextStoryIntent  {desire} next article
+NextStoryIntent  another story
+NextStoryIntent  more stories
+NextStoryIntent  another article
+NextStoryIntent  {desire} another story
+NextStoryIntent  {desire} more stories
+NextStoryIntent  another headline
+NextStoryIntent  {desire} another article
+NextStoryIntent  {desire} another headline
+NextStoryIntent  move on to the next article
+NextStoryIntent  move on to the next story
+NextStoryIntent  move on to the next headline
+NextStoryIntent  move on to another article
+NextStoryIntent  move on to another story
+NextStoryIntent  move on to another headline
+
+PreviousStoryIntent  previous story
+PreviousStoryIntent  previous headline
+PreviousStoryIntent  previous article
+PreviousStoryIntent  {desire} previous story
+PreviousStoryIntent  the previous story
+PreviousStoryIntent  the previous headline
+PreviousStoryIntent  the previous article
+PreviousStoryIntent  {desire} previous headline
+PreviousStoryIntent  {desire} previous article
+PreviousStoryIntent  {desire} story before
+PreviousStoryIntent  {desire} headline before
+PreviousStoryIntent  {desire} article before
+PreviousStoryIntent  go back to the previous story
+PreviousStoryIntent  go back to the story before
+PreviousStoryIntent  go back one
+PreviousStoryIntent  go back one story
+PreviousStoryIntent  go back a story
+PreviousStoryIntent  go back to the previous headline
+PreviousStoryIntent  go back to the headline before
+PreviousStoryIntent  go back one headline
+PreviousStoryIntent  go back a headline
+PreviousStoryIntent  go back to the previous article
+PreviousStoryIntent  go back to the article before
+PreviousStoryIntent  go back one article
+PreviousStoryIntent  go back an article
+PreviousStoryIntent  return to the previous headline
+PreviousStoryIntent  return to the previous article
+PreviousStoryIntent  return to the previous story
+PreviousStoryIntent  return to the previous headlines
+PreviousStoryIntent  return to the previous stories
+PreviousStoryIntent  return to the previous articles

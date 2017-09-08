@@ -1,0 +1,92 @@
+{
+    "en-US": {
+      "WELCOME_FIRST_VISIT" : {
+        "DIALOGUE" : "Welcome to %%COMPANY_NAME%% %%SKILL_NAME%%. There are two ways to get news: you can browse news categories, or I can read you the latest news story. What would you like to do?",
+        "REPROMPT" : "You can browse news categories to find headlines, or hear the latest news story. Try saying things like browse stories or what's the latest. What would you like to do?"
+      },
+      "WELCOME_BACK_NO_CATEGORY" : {
+        "DIALOGUE" : "Welcome back to %%COMPANY_NAME%% %%SKILL_NAME%%. Would you like to browse categories, or hear the latest news story?"
+      },
+      "WELCOME_BACK_CATEGORY" : {
+        "DIALOGUE" : "Welcome back to %%COMPANY_NAME%% %%SKILL_NAME%%. Would you like to hear %%CATEGORY_NAME%% news, browse categories, or hear the latest news story?"
+      },
+      "CATEGORY_LIST" : {
+        "DIALOGUE" : "You can choose from: %%CATEGORY_LIST%%. Which category would you like?"
+      },
+      "CATEGORY_ERROR" : {
+        "DIALOGUE" : "I'm sorry, I don't have any stories for %%CATEGORY_NAME%%. You can choose from: %%CATEGORY_LIST%%. Which category would you like?",
+        "REPROMPT": "Choose a category from %%CATEGORY_LIST%%. Or I can read the latest news story. What would you like to do?"
+      },
+      "LATEST_NEWS" : {
+        "DIALOGUE" : "Here's the latest news from %%SKILL_NAME%%:",
+        "CARD_TITLE" : "Latest News",
+        "CARD_CONTENT" : "You’ve tuned in to the latest news from %%SKILL_NAME%%. You can pause or stop this stream at any time and resume to pick up where you left off."
+      },
+      "STORY_LIST_START" : {
+        "DIALOGUE" : "There are %%COUNT%% headlines in %%CATEGORY_NAME%%. The first headline is: %%HEADLINE%%. Would you like to hear the full story, or move on to the next headline?",
+        "REPROMPT" : "I can read you the full story for %%HEADLINE%%. Or you can move on to the next headline. What would you like to do?"
+      },
+      "STORY_NEXT" : {
+        "DIALOGUE" : "The %%ORDINAL%% headline is: %%HEADLINE%%. Would you like to hear the full story, or move on to the next headline?",
+        "REPROMPT" : "I can read you the full story for %%HEADLINE%%. Or you can move on to the next headline. What would you like to do?"
+      },
+      "STORY_LAST" : {
+        "DIALOGUE" : "The last headline in %%CATEGORY_NAME%% is: %%HEADLINE%%. Would you like to hear the full story or hear the latest news story?",
+        "REPROMPT" : "I can read you the full story for %%HEADLINE%%.  Would you like to hear the full story or hear the latest news story?"
+      },
+      "STORY_BEGINNING_ERROR" : {
+        "DIALOGUE" : "This is the beginning of the list. The %%ORDINAL%% headline is: %%HEADLINE%%. Would you like to hear the full story, or move on to the next headline?",
+        "REPROMPT" : "I can read you the full story for %%HEADLINE%%. Or you can move on to the next headline. What would you like to do?"
+      },
+      "STORY_END_ERROR" : {
+        "DIALOGUE" : "This is the last story. The %%ORDINAL%% headline is: %%HEADLINE%%. Would you like to hear the full story or return to the previous headline?",
+        "REPROMPT" : "I can read you the full story for %%HEADLINE%%. Or you can move on to the next headline. What would you like to do?"
+      },
+      "STORY_LIST_ZERO" : {
+        "DIALOGUE" : "There aren't any headlines in that category. You can choose from: %%CATEGORY_LIST%%. Which category would you like?"
+      },
+      "STORY_FULL_STORY" : {
+        "DIALOGUE" : "Here's the full story: %%STORY_TEXT%%. <break time=\"500ms\"/> This is the end of the story. Would you like to move on to the next headline, browse categories, or hear the latest news story?",
+        "REPROMPT" : "Would you like to move on to the next headline, browse categories, or hear the latest news story?",
+        "CARD_TITLE" : "%%HEADLINE%%",
+        "CARD_CONTENT" : "%%STORY_TEXT%%"
+      },
+      "STORY_FULL_STORY_LAST" : {
+        "DIALOGUE" : "Here's the full story: %%STORY_TEXT%%. <break time=\"500ms\"/> This is the end of the last story. You can browse news categories, or I can read you the latest news story. What would you like to do?",
+        "REPROMPT" : "You can browse news categories, or I can read you the latest news story. What would you like to do?",
+        "CARD_TITLE" : "%%HEADLINE%%",
+        "CARD_CONTENT" : "%%STORY_TEXT%%"
+      },
+      "GENERAL_ERROR" : {
+        "DIALOGUE" : "I'm sorry, I can't do that for you. Would you like to browse categories, or hear the latest news story?"
+      },
+      "CATEGORY_SELECTION_ERROR" : {
+        "DIALOGUE" : "I'm sorry, I didn't get that. I can give you headlines from these categories: %%CATEGORY_LIST%%, or I can read the latest news story. What would you like to do?",
+        "REPROMPT" : "Choose a category from %%CATEGORY_LIST%%. Or I can read the latest news story. What would you like to do?"
+      },
+      "AUDIO_PLAYBACK_ERROR" : {
+        "DIALOGUE" : "I'm sorry, I'm not able to do that. When the latest news is finished, you can browse categories."
+      },
+      "AUDIO_PLAYBACK_PREVIOUS_STORY_ERROR" : {
+        "DIALOGUE" : "I'm sorry, there are no previous latest news stories."
+      },
+      "AUDIO_PLAYBACK_NEXT_STORY_ERROR" : {
+        "DIALOGUE" : "I'm sorry, there are no additional latest news stories."
+      },
+      "STORY_FETCH_ERROR" : {
+        "DIALOGUE" : "I'm sorry, but I couldn't get the stories for that category. Would you like to browse categories or hear the latest news story?"
+      },
+      "HELP_START" : {
+        "DIALOGUE" : "With %%COMPANY_NAME%% %%SKILL_NAME%%, you can easily hear all the news you're interested in. You can browse news categories to find headlines, or hear the latest news story. Try saying things like browse stories or what's the latest. What would you like to do?"
+      },
+      "HELP_BROWSE" : {
+        "DIALOGUE" : "%%SKILL_NAME%% allows you to specify a category of headlines you're interested in. You can choose from these categories: %%CATEGORY_LIST%%. Or if you want to hear the latest news story, you can say things like latest news or what's the latest. What would you like to do?"
+      },
+      "HELP_BROWSE_GUIDE" : {
+        "DIALOGUE" : "%%SKILL_NAME%% allows you to navigate a list of stories for the category you choose. You can say things like next or previous to move between headlines, or you can say read me the full story or hear more to hear the full news story. What would you like to do?"
+      },
+      "EXIT_CONFIRM" : {
+        "DIALOGUE" : "Okay. Thanks for using %%SKILL_NAME%%. Goodbye!"
+      }
+    }
+}

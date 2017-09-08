@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss version="2.0">
+    <channel>
+        <link>TBD</link>
+        <title>Amazon News Headliner</title>
+        <description>Amazon News Headliner mock RSS feed.</description>
+        <managingEditor>Ama Zonn</managingEditor>
+        <lastBuildDate>Mon, 19 Apr 2017 20:10:44 +0000</lastBuildDate>
+        <pubDate>Mon, 19 Apr 2017 20:10:44 +0000</pubDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <link>link</link>
+            <guid isPermaLink="true">invalid_story</guid>
+            <pubDate>Mon, 5 Apr 2017 20:09:35 +0000</pubDate>
+            <category>Business</category>
+            <author>Joseph.Bien-Kahn@wired.com</author>
+        </item>
+        <item>
+            <link>link</link>
+            <guid isPermaLink="true">link</guid>
+            <title>Jeff Bezos outlines his methods for "high-velocity decision-making"</title>
+            <description>Amazon CEO Jeff Bezos wants his $430 billion publicly traded company to behave with the urgency of the startup it once was. To make sure he acts quickly, he follows a set of guidelines for "high-velocity decision-making" he laid out in his annual letter to shareholders. He urges his employees to follow them, and they contain sound principles for any competitive organization: Don’t wait for all the information before acting. Most decisions should be made with only about 70% of the information you need; if you wait for 90% or more, you’re moving too slowly. A well-managed company can adjust if necessary. "If you’re good at course correcting, being wrong may be less costly than you think, whereas being slow is going to be expensive for sure," Bezos said. Agree to disagree. Bezos uses the phrase "disagree and commit," which he employs when he realizes a consensus isn’t possible, but he trusts the judgment of the other decision makers. It means that while Bezos disagrees with the decision, he’s committed to a successful outcome. It’s a much faster alternative than the team having to convince him to change his mind. Sometimes, agreement isn’t possible. In a large and complex company like Amazon, different teams will have different objectives that no amount of discussion will resolve. Those conflicts need to brought to more senior executive to broker. "Without escalation, the default dispute resolution mechanism for this scenario is exhaustion…. 'You’ve worn me down' is an awful decision-making process. It’s slow and de-energizing. Go for quick escalation instead—it’s better." As Amazon grows even larger, and branches into more and more disparate business—from cloud hosting to movie production to smart devices—it’s inevitable that conflicts will arise. And while the company has a reputation for its sharp-elbowed culture, Bezos doesn’t want disputes to bog down decision making. By posting the rules of the road, Bezos is setting out Amazon’s priorities: It’s OK to make the wrong decisions; just don’t make them slowly.</description>
+            <pubDate>Mon, 13 Apr 2017 20:10:44 +0000</pubDate>
+            <category>Business</category>
+            <author>Oliver.Staley@qz.com</author>
+            <enclosureLarge url="https://s3.amazonaws.com/amazon-headliner/bezos_large.png" length="1278161" type="image/png" />
+            <enclosureSmall url="https://s3.amazonaws.com/amazon-headliner/bezos_small.png" length="633145" type="image/png" />
+        </item>
+        <item>
+            <link>link</link>
+            <guid isPermaLink="true">link</guid>
+            <title>Instagram's Snapchat clone is now more popular than Snapchat</title>
+            <description>It might not be long until Snapchat’s business model fades as its messages do. In about eight months, Instagram Stories, the function of Facebook’s image-sharing social network that allows users to post images and short videos that disappear after 24 hours, has amassed 200 million daily users, it announced today. That’s more than the 161 million users that Snapchat, which pioneered the daily story feature, has attracted in the five years the company has existed. Snap, the parent company of Snapchat which debuted on the New York Stock Exchange in February, wasn’t immediately available to comment on how many daily users it has now—the last reported figure was accurate through Dec. 31, 2016. But in Snap’s IPO filings, it revealed that user growth had slowed in recent quarters, and it’s very likely that Instagram’s copying of one of its main features has not helped it attract new users. Since Facebook launched stories on Instagram, it has rolled out a similar feature to just about every social network it owns, including WhatsApp, Facebook Messenger, and Facebook itself, regardless of whether the feature really fits in with how those networks are usually used. And today, Instagram announced a range of new features for Stories that it also copied from Snapchat, including being able to pin stickers to certain areas of a video post, and more city-specific images you can overlay onto posts. (Snapchat calls these "geofilters," and Instagram calls them "geostickers.") It’s not clear what Facebook’s assault will have on the newly public Snap. But Facebook's ability to quickly (and legally) copy any feature Snapchat has and send it out to upwards of 2 billion users at any given time was always likely to be a real concern for Snap’s long-term health. The vast majority of Snap's revenue comes from advertisements on Snapchat, and a large slice of that comes from the video ads it shows between Stories. If that money dries up because its users switch to Facebook, and Snap hasn’t found something to replace it with, the company may well struggle to survive. At the time of publishing, Snap’s stock price was down roughly 1.5% on the day, to $20—only about $3 more than the original IPO price, and below the $24 price it debuted on the market.</description>
+            <pubDate>Mon, 13 Apr 2017 18:10:44 +0000</pubDate>
+            <category>Business</category>
+            <author>Mike.Murphy@qz.com</author>
+            <enclosureLarge url="https://s3.amazonaws.com/amazon-headliner/instagram_large.png" length="877568" type="image/png" />
+            <enclosureSmall url="https://s3.amazonaws.com/amazon-headliner/instagram_small.png" length="454627" type="image/png" />
+        </item>
+        <item>
+            <link>link</link>
+            <guid isPermaLink="true">link</guid>
+            <title>Investors call for Tesla changes. Musk tells them to buy Ford.</title>
+            <description>Elon Musk has some sharp words for shareholders who want changes to Tesla's board of directors: buy Ford shares instead. The Tesla CEO used Twitter to fire back at a group of investors who called for the electric car maker's board to add two new directors who have no ties to Musk. Musk responded to a Reuters article about a letter from the group, which said new independent directors are needed to "provide a critical check on possible dysfunctional group dynamics." "This investor group should buy Ford stock," Musk wrote. "Their governance is amazing." The Ford family maintains effective control over the automaker through ownership of a separate class of stock. The shares gives them 40% of voting power, an arrangement that has been criticized in recent years. Musk's dig at Ford (F) comes after Tesla surpassed it in market value last week. This week, Tesla (TSLA) briefly became the most valuable carmaker in America when it overtook GM for a while. Tesla's stock declined 3.9% on Wednesday, but it's still up about 39% so far this year. Musk tweeted that he had already said Tesla would add new independent members to the board. He said the announcement would come soon, but had nothing to do with the investor group. A Tesla spokesperson said the company is "actively engaged in a search process for independent board members." "We expect that as companies make the transition to publicly-traded status, the governance structures and practices in place at the time of the IPO will evolve to align with the company's changing strategy," Reuters cited the letter as saying. "However, Tesla's seven-member board is largely unchanged from its pre-IPO days." Tesla went public in 2010. The investor letter had five signatories, Reuters reported, including the California State Teachers Retirement System, Hermes Equity Ownership Services and CtW Investment Group. Those three didn't respond to requests for comment. Tesla doesn't sell nearly as many cars as major automakers such as Ford and GM. But investors seem excited about Tesla's upcoming Model 3 car, which could help make Tesla a more mainstream auto company instead of just a luxury electric car maker.</description>
+            <pubDate>Mon, 13 Apr 2017 10:10:44 +0000</pubDate>
+            <category>Business</category>
+            <author>Robert.Mclean@cnn.com</author>
+            <enclosureLarge url="https://s3.amazonaws.com/amazon-headliner/musk_large.png" length="1083918" type="image/png" />
+            <enclosureSmall url="https://s3.amazonaws.com/amazon-headliner/musk_small.png" length="553915" type="image/png" />
+        </item>
+    </channel>
+</rss>

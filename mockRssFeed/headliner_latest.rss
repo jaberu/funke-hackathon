@@ -1,0 +1,22 @@
+<?xml version=1.0 encoding=UTF-8 standalone=no?>
+<rss version=2.0>
+    <channel>
+        <link>TBD</link>
+        <title>Amazon News Headliner</title>
+        <description>Amazon News Headliner mock RSS feed.</description>
+        <managingEditor>Ama Zonn</managingEditor>
+        <lastBuildDate>Mon, 19 Apr 2017 20:10:44 +0000</lastBuildDate>
+        <pubDate>Mon, 19 Apr 2017 20:10:44 +0000</pubDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss\</docs\>
+        <item>
+            <link>link</link>
+            <guid isPermaLink=true>link</guid>
+            <title>U.S. Lawmakers Introduce a Bill to Limit Searches and Seizures at the Border</title>
+            <description></description>
+            <pubDate>Mon, 5 Apr 2017 20:09:35 +0000</pubDate>
+            <category>Politics</category>
+            <author>Joseph.Bien-Kahn@wired.com</author>
+            <enclosure url=https://s3.amazonaws.com/amazon-headliner/latest_news.mp3 length=756945 type=audio/mpeg />
+        </item>
+    </channel>
+</rss>

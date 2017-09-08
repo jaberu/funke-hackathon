@@ -1,0 +1,89 @@
+{
+  "intents": [
+    {
+      "intent": "LatestNewsIntent",
+      "slots": [
+        {
+          "name": "desire",
+          "type": "LIST_OF_DESIRES"
+        }
+      ]
+    },
+    {
+      "intent": "CategoryOnlyIntent",
+      "slots": [
+        {
+          "name": "category",
+          "type": "LIST_OF_CATEGORIES"
+        }
+      ]
+    },
+    {
+      "intent": "BrowseStoriesIntent",
+      "slots": [
+        {
+          "name": "desire",
+          "type": "LIST_OF_DESIRES"
+        },
+        {
+          "name": "category",
+          "type": "LIST_OF_CATEGORIES"
+        }
+      ]
+    },
+    {
+      "intent": "FullStoryIntent",
+      "slots": [
+        {
+          "name": "desire",
+          "type": "LIST_OF_DESIRES"
+        }
+      ]
+    },
+    {
+      "intent": "NextStoryIntent",
+      "slots": [
+          {
+            "name": "desire",
+            "type": "LIST_OF_DESIRES"
+          }
+      ]
+    },
+    {
+      "intent": "PreviousStoryIntent",
+      "slots": [
+          {
+            "name": "desire",
+            "type": "LIST_OF_DESIRES"
+          }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.NextIntent"
+    },
+    {
+      "intent": "AMAZON.PreviousIntent"
+    }
+  ]
+}

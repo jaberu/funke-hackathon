@@ -1,0 +1,41 @@
+<?xml version=1.0 encoding=UTF-8 standalone=no?>
+<rss version=2.0>
+    <channel>
+        <link>TBD</link>
+        <title>Amazon News Headliner</title>
+        <description>Amazon News Headliner mock RSS feed.</description>
+        <managingEditor>Ama Zonn</managingEditor>
+        <lastBuildDate>Mon, 19 Apr 2017 20:10:44 +0000</lastBuildDate>
+        <pubDate>Mon, 19 Apr 2017 20:10:44 +0000</pubDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss\</docs\>
+        <item>
+            <link>link</link>
+            <guid isPermaLink=true>link</guid>
+            <title>Bipartisan Agreement Reached to Fund Government Through September</title>
+            <description>Congressional leaders reached a bipartisan agreement on Sunday to fund the government through September, effectively ending any suspense about the possibility of a government shutdown next weekend. The agreement, which still must be voted on by lawmakers, includes increased funding for the military and for border security. But it does not include funding for the wall that President Trump wants to build along the border with Mexico, one of his major campaign promises. The deal increases funding for the National Institutes of Health, despite the Trump administration’s request that its budget be reduced for the rest of the fiscal year. And it provides tens of millions of dollars to reimburse costs incurred by local law enforcement agencies to protect Mr. Trump and his family — a boon to New York City, which has had the costly task of helping to protect Trump Tower. The spending package would be the first significant bipartisan measure approved by Congress during the Trump presidency. Republicans, despite having control of both houses of Congress and the White House, were unable to pass any marquee legislation in the president’s first 100 days.</description>
+            <pubDate>Mon, 30 Apr 2017 20:09:35 +0000</pubDate>
+            <category>Politics</category>
+            <author>thomas.kaplan@nyt.com</author>
+        </item>
+        <item>
+            <link>link</link>
+            <guid isPermaLink=true>link</guid>
+            <title>Supreme Court Rules Miami Can Sue for Predatory Lending</title>
+            <description>The Supreme Court ruled on Monday that Miami can sue two banks for predatory lending under the Fair Housing Act of 1968. The case arose from the 2008 financial crisis. Miami sued Bank of America and Wells Fargo, saying that their discriminatory mortgage lending practices had led to a disproportionate number of defaults by minority home buyers and, in turn, to financial harm to the city. Even as the majority of justices ruled that Miami was entitled to sue under the housing law, the court declined to decide whether the city had asserted a direct enough connection between the banks’ actions and the harm it claimed. The court sent the case back to the federal appeals court in Atlanta for further exploration of that question. When the case was argued in the Supreme Court in November, it seemed headed for a 4-4 tie. But the vote on the question of whether Miami could sue under the law was 5 to 3, with Chief Justice John G. Roberts Jr. joining the court’s four-member liberal bloc to form a majority.</description>
+            <pubDate>Mon, 1 May 2017 20:09:35 +0000</pubDate>
+            <category>Politics</category>
+            <author>adam.liptak@nyt.com</author>
+            <enclosureLarge url=https://s3.amazonaws.com/amazon-headliner/court_large.png length=1172033 type=image/png />
+            <enclosureSmall url=https://s3.amazonaws.com/amazon-headliner/court_small.png length=578488 type=image/png />
+        </item>
+        <item>
+            <link>link</link>
+            <guid isPermaLink=true>link</guid>
+            <title>Gerrymandering Has a Solution After All. It’s Called Math.</title>
+            <description>One thing you have to admire about gerrymandering: It’s got some wicked slang. Gerrymandering is, of course, the dark art of drawing a legislative map that favors your political party. That involves “packing”—taking all the neighborhoods with voters who hate you and cramming them into one district. (You’ll lose that district by a landslide but have a leg up in all the others.) The reverse trick is “cracking,” breaking up a neighborhood that loathes you into chunks that you attach to other regions where you’re loved. Your opponents’ votes get spread around and diluted. Obviously these shenanigans warp and imperil democracy. Various groups have sued over gerrymandered districts three dozen times in the past few decades, but they’ve always lost, because it’s hard to prove how much a map is gerrymandered. Usually plaintiffs have resorted to hypotheticals. (“If both parties had won the same number of votes, this map would have given the Republicans four more seats than they deserved.”) But courts don’t like hypotheticals. They want hard numbers. Last year, they got them. Eric McGhee, a research fellow at the Public Policy Institute of California, has figured out a new way to think about gerrymandering: in terms of efficiency. With packing and cracking, the goal is to ensure your opponents’ votes are wasted, so they do not contribute to victory. A packed district has—artificially—too many votes for one side. A cracked district, too few. McGhee figured out how to calculate the “efficiency gap” of an election. Go district by district, counting how many votes the winner got above 50 percent—anything higher was a waste. Then count the loser’s votes, because all those went down the tubes. Add up all the waste by party statewide, then take the difference between the two numbers as a percentage of votes cast—that’s the efficiency gap. Yes, other factors could be at work—population change, let’s say. But in general, the bigger the gap, the more gerrymandered the state.</description>
+            <pubDate>Mon, 26 Apr 2017 20:09:35 +0000</pubDate>
+            <category>Politics</category>
+            <author>clive.thompson@wired.com</author>
+        </item>
+    </channel>
+</rss>
