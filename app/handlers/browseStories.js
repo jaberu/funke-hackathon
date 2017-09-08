@@ -236,7 +236,7 @@ let browseStories = {
     }
     
     intent.slots.category = "neuste"
-    browseStories()
+    this.emitWithState('BrowseStoriesIntent')
   },
   help: function () {
         // offer the user context sensitive browsing help
