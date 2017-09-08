@@ -155,7 +155,7 @@ let controller = {
       cardTitle = strings.replaceHeadline(cardTitle, headline)
       cardContent = strings.replaceStoryText(cardContent, storyText)
 
-      alexaResponse.askWithCard(outputSpeech, repromptSpeech, cardTitle, cardContent, cardImageObject).call(this)
+      alexaResponse.ask(outputSpeech, repromptSpeech).call(this)
     })
   },
   askForCategory: function () {
