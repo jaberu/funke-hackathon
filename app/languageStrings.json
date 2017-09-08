@@ -86,7 +86,8 @@
       "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger sagen, um dich zwischen den Artikeln zu bewegen, oder du kannst sagen: lese mir den Artikel vor oder mehr sagen um den Artikel zu hören. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "EXIT_CONFIRM" : {
-      "DIALOGUE" : "Okay danke dass du %%SKILL_NAME%% benutzt hast. Auf Wiedersehen! <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_exit.mp3\" />"
+      "DIALOGUE" : "Okay danke dass du %%SKILL_NAME%% benutzt hast. <say-as interpret-as=\"interjection\">Bis dann!</say-as> <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_exit.mp3\" />",
+      "REPROMPT" : "Danke dass du %%SKILL_NAME%% benutzt hast. <say-as interpret-as=\"interjection\">Bis bald!</say-as> <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_exit.mp3\" />"
     }
   }
 }
