@@ -1,0 +1,19 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - npm install
+      - npm install gulp-cli -g
+  pre_build:
+    commands:
+      - npm run test
+      - echo Build started on `date`
+  build:
+    commands:
+      - gulp build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Deploy
+      - aws lambda update-function-code --function-name AmazonNewsAlexaSkill --zip-file fileb://build/build.zip

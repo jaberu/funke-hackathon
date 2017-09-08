@@ -16,6 +16,7 @@ module.exports = {
     return function() {
       let baseUrl = skillConfig.BASE_URL;
       let uri = _.get(skillConfig.SUPPORTED_CATEGORIES, `${category}.URI`, category);
+      console.log("baseUrl" + baseUrl + " uri " + uri );
       request.get({
         baseUrl: baseUrl,
         uri: uri
