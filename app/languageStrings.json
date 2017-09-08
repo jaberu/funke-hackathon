@@ -27,7 +27,7 @@
       "REPROMPT" : "Ich kann dir den ganzen Artikel zu %%HEADLINE%% vorlesen. Oder du springst zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_NEXT" : {
-      "DIALOGUE" : "Die %%ORDINAL%% Übberschrift lautet: %%HEADLINE%%. Möchtest du den ganzen, oder weiter zur nächsten?",
+      "DIALOGUE" : "Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du den ganzen, oder weiter zur nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Oder du kannst vorspringen zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_LAST" : {
