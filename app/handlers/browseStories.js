@@ -166,6 +166,16 @@ let controller = {
       }
     })
   },
+    showVideo: function () {
+        return function () {
+            // read the full story text, then give the user options
+            let currentVideos = this.attributes.currentVideos
+
+            outputSpeech = currentVideos.join(',')
+            alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+
+        })
+    },
   askForCategory: function () {
     return function () {
             // prompt the user for a category
@@ -328,6 +338,7 @@ module.exports = {
   'FullStoryIntent': browseStories.fullStory,
   'NextStoryIntent': browseStories.next,
   'PreviousStoryIntent': browseStories.previous,
+  'ShowVideoIntent': browseStories.showVideo,
   'AMAZON.HelpIntent': browseStories.help,
   'AMAZON.StopIntent': browseStories.cancel,
   'AMAZON.CancelIntent': browseStories.cancel,
