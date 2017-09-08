@@ -23,8 +23,8 @@
       "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von Funkenews. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
     },
     "STORY_LIST_START" : {
-      "DIALOGUE" : "Es gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
-      "REPROMPT" : "Ich kann dir den ganzen Artikel zu %%HEADLINE%% vorlesen. Oder du springst zum nächsten Artikel. Was möchtest du tun?"
+      "DIALOGUE" : "Es gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
+      "REPROMPT" : "Ich kann dir den ganzen Artikel zu %%HEADLINE%% vorlesen. Oder du springst zum nächsten Artikel. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "STORY_NEXT" : {
       "DIALOGUE" : "Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du den ganzen, oder weiter zur nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
