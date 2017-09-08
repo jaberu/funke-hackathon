@@ -130,7 +130,7 @@ let controller = {
 
       if (story.videos.length > 0) {
           outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
-          outputSpeech = outputSpeech + story.video.join(',')
+          outputSpeech = outputSpeech + story.videos.join(',')
           this.attributes.currentVideos = story.videos
           alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {

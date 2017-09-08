@@ -37,9 +37,9 @@ function parseBackendResponse (response) {
       }
     }
     parser.onopentag = function (node) {
-      if (node.name === 'media') {
+      if (node.name === 'media-reference') {
         if (node.attributes['display-option'] === 'brightcove') {
-          media.push(node.attr('video-id'))
+          media.push(node.attributes['video-id'])
         }
         ignore = true
         ignoreTag = node.name
