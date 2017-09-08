@@ -89,6 +89,8 @@ module.exports = (url, includeList, excludeList) => {
     })
     .map((item) => {
       let ret = item.replace(/\s\s+/g, ' ')
+      ret = ret.replace(/„/g, '')
+      ret = ret.replace(/“/g, '')
       return xmlescape(ret)
     })
     .then((response) => {

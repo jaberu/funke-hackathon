@@ -624,7 +624,7 @@ require('./app/index.js').handler({
     },
     "request": {
       "type": "IntentRequest",
-      "requestId": "EdwRequestId.e394d912-73a4-4541-92c3-40eba8a61288",
+      "requestId": "EdwRequestId.076f31a7-4eca-4843-91af-97c2b4dc4769",
       "intent": {
         "name": "FullStoryIntent",
         "slots": {
@@ -634,7 +634,7 @@ require('./app/index.js').handler({
         }
       },
       "locale": "de-DE",
-      "timestamp": "2017-09-08T17:53:43Z"
+      "timestamp": "2017-09-08T18:10:26Z"
     },
     "context": {
       "AudioPlayer": {
