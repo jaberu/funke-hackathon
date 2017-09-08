@@ -286,6 +286,22 @@ let browseStories = {
       }
     }
   },
+  latestNews: function () {
+    let that = this
+    let onError = function () {
+      controller.apiError().call(that)
+    }
+    let onSuccess = function (headlines) {
+      if (headlines.length < 1) {
+        controller.noStoriesError().call(that)
+      } else {
+        that.attributes.currentIndex = 0
+        that.attributes.currentHeadlines = headlines
+        controller.readHeadlineWithCount().call(that)
+      }
+    }
+    api.fetch("neueste Nachrichten", onSuccess, onError).call(that)
+  },
   next: function () {
         // if the user is browsing, move to next story,
         // or let the user know they are on the last story
@@ -332,6 +348,7 @@ let browseStories = {
 module.exports = {
   'NewSession': browseStories.newSession,
   'LaunchRequest': browseStories.launch,
+  'LatestNewsIntent': browseStories.latestNews,
   'SessionEndedRequest': browseStories.cancel,
   'Unhandled': browseStories.unhandled,
   'CategoryOnlyIntent': browseStories.browseStories,

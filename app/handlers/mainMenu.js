@@ -34,6 +34,10 @@ let mainMenu = {
         this.handler.state = constants.states.BROWSE_STORIES;
         this.emitWithState('BrowseStoriesIntent');
     },
+    latestNews: function () {
+        this.handler.state = constants.states.BROWSE_STORIES;
+        this.emitWithState('LatestNewsIntent');
+    },
     repeat: function () {
         // repeat the last thing said to the user
         alexaResponse.repeat().call(this);
@@ -58,6 +62,7 @@ let mainMenu = {
 module.exports = {
     'NewSession': mainMenu.newSession,
     'LaunchRequest': mainMenu.launch,
+    'LatestNewsIntent': mainMenu.latestNews,
     'CategoryOnlyIntent': mainMenu.browseStories,
     'BrowseStoriesIntent': mainMenu.browseStories,
     'AMAZON.HelpIntent': mainMenu.help,
