@@ -25,7 +25,7 @@ module.exports = {
               'sport'
             ]
         },
-        neueste: {
+        "neueste Nachrichten": {
             URI: '?service=Rss',
             synonyms: [
               'neueste Nachrichten',
