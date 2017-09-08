@@ -128,7 +128,7 @@ let controller = {
       // let storyText = currentStory.description
       let cardImageObject = null
 
-      if (story.videos) {
+      if (story.videos.length > 0) {
           outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
           outputSpeech = outputSpeech + story.video.join(',')
           this.attributes.currentVideos = story.videos
