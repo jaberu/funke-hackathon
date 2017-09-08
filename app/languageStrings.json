@@ -20,22 +20,22 @@
     "LATEST_NEWS" : {
       "DIALOGUE" : "Hier ist die neueste Nachricht der Berliner Morgenpost",
       "CARD_TITLE" : "Neueste Nachricht",
-      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von Berliner Morgenpost. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
+      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten der Berliner Morgenpost. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
     },
     "STORY_LIST_START" : {
       "DIALOGUE" : "Es gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel zu %%HEADLINE%% vorlesen. Oder du springst zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_NEXT" : {
-      "DIALOGUE" : "Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du den ganzen, oder weiter zur nächsten?",
+      "DIALOGUE" : "Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören, oder weiter zum nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Oder du kannst vorspringen zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_LAST" : {
-      "DIALOGUE" : "Der neueste Artikel aus der Rubrik %%CATEGORY_NAME%% lautet: %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten?",
+      "DIALOGUE" : "Der neueste Artikel aus der Rubrik %%CATEGORY_NAME%% lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten?"
     },
     "STORY_BEGINNING_ERROR" : {
-      "DIALOGUE" : "Dies ist die Liste an Artikeln. Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten?",
+      "DIALOGUE" : "Dies ist die Liste an Artikeln aus %%CATEGORY_NAME%%. Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten?",
       "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Oder du kannst vorspringen zum nächsten Artikel. Was möchtest du tun?"
     },
     "STORY_END_ERROR" : {
@@ -65,13 +65,13 @@
       "REPROMPT" : "Bitte wähle eine Rubrik aus Berlin, Politik oder Wirtschaft, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?"
     },
     "AUDIO_PLAYBACK_ERROR" : {
-      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du die Rubriken durchsuchen."
+      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du die Rubriken weiter durchsuchen."
     },
     "AUDIO_PLAYBACK_PREVIOUS_STORY_ERROR" : {
       "DIALOGUE" : "Es tut mir leid. Es gibt keinen vorigen Artikel."
     },
     "AUDIO_PLAYBACK_NEXT_STORY_ERROR" : {
-      "DIALOGUE" : "Es tut mir leid. Es gibt keine weiteren neusten Artikel."
+      "DIALOGUE" : "Es tut mir leid. Es gibt keine weiteren neuesten Artikel."
     },
     "STORY_FETCH_ERROR" : {
       "DIALOGUE" : "Es tut mir leid, aber ich kann die Artikel für diese Rubrik nicht erreichen. Möchtest du die Rubriken durchsuchen oder dir neusten Artikel hören?"
