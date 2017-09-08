@@ -1,17 +1,17 @@
 {
   "de-DE": {
     "WELCOME_FIRST_VISIT" : {
-      "DIALOGUE" : "Willkommen im Funkenews. Ich biete dir 2 Möglichkeiten: du kannst Rubriken durchsuchen, oder du kannst dir die neueste Nachricht vorlesen lassen. Was möchtest du tun?",
+      "DIALOGUE" : "Willkommen zur %%SKILL_NAME%%. Ich biete dir 2 Möglichkeiten: du kannst Rubriken durchsuchen, oder du kannst dir die neueste Nachricht vorlesen lassen. Was möchtest du tun?",
       "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder lasse dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun?"
     },
     "WELCOME_BACK_NO_CATEGORY" : {
-      "DIALOGUE" : "Willkommen zurück in Funkenews. Möchtest du die Kategorien durchsuchen, oder die neuesten Nachrichten erhalten?"
+      "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. Möchtest du die Rubriken durchsuchen, oder die neuesten Nachrichten erhalten?"
     },
     "WELCOME_BACK_CATEGORY" : {
-      "DIALOGUE" : "Willkommen zurück in Funkenews. Möchtest du Nachrichten aus %%CATEGORY_NAME%%, die Rubriken durchsuchen, oder die aktuellsten Nachrichten hören?"
+      "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. Möchtest du Nachrichten aus %%CATEGORY_NAME%% hören, die Rubriken durchsuchen, oder die aktuellsten Nachrichten hören?"
     },
     "CATEGORY_LIST" : {
-      "DIALOGUE" : "Folgende Rubrken biete ich dir: %%CATEGORY_NAME%%. Welche Rubrik möchtest du hören?"
+      "DIALOGUE" : "Folgende Rubriken biete ich dir: %%CATEGORY_LIST%%. Welche Rubrik möchtest du hören?"
     },
     "CATEGORY_ERROR" : {
       "DIALOGUE" : "Entschuldige ich habe keine Artikel in der Kategorie %%CATEGORY_NAME%% gefunden. Du kannst aus folgenden Rubriken %%CATEGORY_NAME%% wählen. Welche möchtest du hören?",
@@ -77,16 +77,16 @@
       "DIALOGUE" : "Es tut mir leid, aber ich kann die Artikel für diese Rubrik nicht erreichen. Möchtest du die Rubriken durchstöbern oder dir neusten Artikel hören?"
     },
     "HELP_START" : {
-      "DIALOGUE" : "Mit Funke News kannst du einfach ale neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchstöbern oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
+      "DIALOGUE" : "Mit %%SKILL_NAME%% kannst du einfach ale neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchstöbern oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
     },
     "HELP_BROWSE" : {
-      "DIALOGUE" : "Funke News erlaubt dir eine Rubrik von Überschriften festzulegen, an denen du interessiert bist. Du kannst aus diesen Rubriken auswählen: Berlin, Politik oder Wirtschaft. Oder falls du dir die neusten Nachrichten anhören möchtest, kannst du etwas sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
+      "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir eine Rubrik von Überschriften festzulegen, an denen du interessiert bist. Du kannst aus diesen Rubriken auswählen: Berlin, Politik oder Wirtschaft. Oder falls du dir die neusten Nachrichten anhören möchtest, kannst du etwas sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
     },
     "HELP_BROWSE_GUIDE" : {
-      "DIALOGUE" : "Funke News erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger um dich zwischen den Überschriften zu bewegen, oder du kannst sagen: lese mir den kompletten Artikel vor oder mehr hören um den kompletten Artikel zu hören. Was möchtest du tun?"
+      "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger um dich zwischen den Überschriften zu bewegen, oder du kannst sagen: lese mir den kompletten Artikel vor oder mehr hören um den kompletten Artikel zu hören. Was möchtest du tun?"
     },
     "EXIT_CONFIRM" : {
-      "DIALOGUE" : "Okay danke dass du Funke News benutzt hast. Auf Wiedersehen!"
+      "DIALOGUE" : "Okay danke dass du %%SKILL_NAME%% benutzt hast. Auf Wiedersehen!"
     }
   }
 }
