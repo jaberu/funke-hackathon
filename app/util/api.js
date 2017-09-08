@@ -15,7 +15,7 @@ module.exports = {
   fetch: function(category, onSuccess, onError) {
     return function() {
       let baseUrl = skillConfig.BASE_URL;
-      let uri = _.get(skillConfig.SUPPORTED_CATEGORIES, `${category}.URI`, category);
+      let uri = _.get(skillConfig.SUPPORTED_CATEGORIES, `${category}.URI`, category.toLowerCase());
       console.log("baseUrl" + baseUrl + " uri " + uri );
       request.get({
         baseUrl: baseUrl,
