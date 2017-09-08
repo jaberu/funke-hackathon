@@ -8,19 +8,19 @@ module.exports = {
     LATEST_URI: 'latest',
     SUPPORTED_CATEGORIES: {
         politik: {
-            URI: 'politik',
+            URI: 'politik/?service=Rss',
             synonyms: [
               'politik'
             ]
         },
         berlin: {
-            URI: 'berlin',
+            URI: 'berlin/?service=Rss',
             synonyms: [
               'berlin'
             ]
         },
         sport: {
-            URI: 'sport',
+            URI: 'sport/?service=Rss',
             synonyms: [
               'sport'
             ]
