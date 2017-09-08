@@ -24,6 +24,20 @@ module.exports = {
             synonyms: [
               'sport'
             ]
+        },
+        neueste: {
+            URI: '?service=Rss',
+            synonyms: [
+              'neueste Nachrichten',
+              'neueste'
+            ]
+        },
+        video: {
+            URI: 'videos/?service=Rss',
+            synonyms: [
+                'Videos',
+                'video'
+            ]
         }
     }
 };

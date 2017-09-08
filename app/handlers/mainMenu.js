@@ -29,11 +29,6 @@ let mainMenu = {
 
         alexaResponse.ask(outputSpeech, repromptSpeech).call(this);
     },
-    latestNews: function () {
-        // change state and start audio file playback
-        this.handler.state = constants.states.AUDIO_PLAYBACK;
-        this.emitWithState('LatestNewsIntent');
-    },
     browseStories: function () {
         // change state and start browsing stories
         this.handler.state = constants.states.BROWSE_STORIES;
@@ -63,7 +58,6 @@ let mainMenu = {
 module.exports = {
     'NewSession': mainMenu.newSession,
     'LaunchRequest': mainMenu.launch,
-    'LatestNewsIntent': mainMenu.latestNews,
     'CategoryOnlyIntent': mainMenu.browseStories,
     'BrowseStoriesIntent': mainMenu.browseStories,
     'AMAZON.HelpIntent': mainMenu.help,
