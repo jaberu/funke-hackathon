@@ -130,7 +130,6 @@ let controller = {
 
       if (story.videos.length > 0) {
           outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
-          outputSpeech = outputSpeech + story.videos.join(',')
           this.attributes.currentVideos = story.videos
           alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {
@@ -165,6 +164,15 @@ let controller = {
           alexaResponse.ask(outputSpeech, repromptSpeech).call(this)
       }
     })
+  },
+  showVideo: function () {
+    return function () {
+        // read the full story text, then give the user options
+        let currentVideos = this.attributes.currentVideos
+
+        outputSpeech = currentVideos.join(',')
+        alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+    }
   },
   askForCategory: function () {
     return function () {
@@ -211,6 +219,9 @@ let controller = {
 }
 
 let browseStories = {
+  showVideo: function () {
+    controller.showVideo().call(this)
+  },
   newSession: function () {
         // forward request to generic NewSession handler
     this.emit('NewSession')
@@ -328,6 +339,7 @@ module.exports = {
   'FullStoryIntent': browseStories.fullStory,
   'NextStoryIntent': browseStories.next,
   'PreviousStoryIntent': browseStories.previous,
+  'ShowVideoIntent': browseStories.showVideo,
   'AMAZON.HelpIntent': browseStories.help,
   'AMAZON.StopIntent': browseStories.cancel,
   'AMAZON.CancelIntent': browseStories.cancel,
