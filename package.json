@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A reference Alexa news skill.",
   "main": "index.js",
+  "scripts": {
+    "test": "echo 'not now' && exit 0"
+  },
   "dependencies": {
     "alexa-sdk": "^1.0.9",
     "bluebird": "^3.5.0",
