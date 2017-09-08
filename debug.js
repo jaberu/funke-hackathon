@@ -1,7 +1,7 @@
 require('./app/index.js').handler({
     "session": {
       "new": false,
-      "sessionId": "SessionId.d55ef3c6-93d6-48db-aa76-40b2dff13cb3",
+      "sessionId": "SessionId.2be13c13-4310-4c91-8cd7-cdd620261441",
       "application": {
         "applicationId": "amzn1.ask.skill.e8b30761-2f5b-421e-a355-07e1d9aeff46"
       },
@@ -9,11 +9,11 @@ require('./app/index.js').handler({
         "currentCategory": "sport",
         "previousCateogry": "sport",
         "prevOutputMode": "_ASK",
-        "prevOutputSpeech": "Es gibt 30 neue Artikel in der Rubrik sport. Der erste Artikel lautet: \n\t\t\tHertha BSC: Die Zeit ist reif für einen Sieg gegen Werder. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
+        "prevOutputSpeech": "Es gibt 30 neue Artikel in der Rubrik sport. Der erste Artikel lautet: \n\t\t\tHertha BSC: Die Zeit ist reif für einen Sieg gegen Werder. Möchtest du den ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
         "created": "2017-09-08T13:22:52Z",
         "STATE": "_BROWSE_STORIES",
         "offsetInMilliseconds": 0,
-        "updated": "2017-09-08T17:38:40Z",
+        "updated": "2017-09-08T17:53:31Z",
         "currentIndex": 0,
         "currentHeadlines": [
           {
@@ -624,7 +624,7 @@ require('./app/index.js').handler({
     },
     "request": {
       "type": "IntentRequest",
-      "requestId": "EdwRequestId.ce4c15b2-4315-4573-bbe1-3532c705bd36",
+      "requestId": "EdwRequestId.e394d912-73a4-4541-92c3-40eba8a61288",
       "intent": {
         "name": "FullStoryIntent",
         "slots": {
@@ -634,7 +634,7 @@ require('./app/index.js').handler({
         }
       },
       "locale": "de-DE",
-      "timestamp": "2017-09-08T17:39:10Z"
+      "timestamp": "2017-09-08T17:53:43Z"
     },
     "context": {
       "AudioPlayer": {

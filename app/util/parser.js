@@ -16,7 +16,7 @@ parser(article, ['body.content', 'p'], ['media'])
 const request = require('superagent')
 const sax = require('sax')
 const Promise = require('bluebird')
-const querystring = require('querystring')
+const xmlescape = require('xml-escape')
 
 function parseBackendResponse (response, tagList, excludeList) {
   return new Promise((resolve, reject) => {
@@ -89,7 +89,7 @@ module.exports = (url, includeList, excludeList) => {
     })
     .map((item) => {
       let ret = item.replace(/\s\s+/g, ' ')
-      return querystring.escape(ret)
+      return xmlescape(ret)
     })
     .then((response) => {
       let arrRes = response.join('</p><p>')
