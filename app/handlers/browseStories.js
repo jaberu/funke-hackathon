@@ -235,7 +235,7 @@ let browseStories = {
       intent.slots = {}
     }
     
-    intent.slots.category = "neuste"
+    intent.slots.category = "neueste"
     this.emitWithState('BrowseStoriesIntent')
   },
   help: function () {

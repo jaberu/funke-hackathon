@@ -25,11 +25,12 @@ module.exports = {
               'sport'
             ]
         },
-        neuste: {
-            URI: '?service=Rss',
+        neueste: {
+            //URI: '?service=Rss',
+            URI: 'sport/?service=Rss',
             synonyms: [
-              'neuste Nachrichten',
-              'neuste'
+              'neueste Nachrichten',
+              'neueste'
             ]
         }
     }
