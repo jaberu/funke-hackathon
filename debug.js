@@ -1,7 +1,7 @@
 require('./app/index.js').handler({
     "session": {
       "new": false,
-      "sessionId": "SessionId.b11281ce-f7d5-47b9-9f91-9a240fdad2b6",
+      "sessionId": "SessionId.d55ef3c6-93d6-48db-aa76-40b2dff13cb3",
       "application": {
         "applicationId": "amzn1.ask.skill.e8b30761-2f5b-421e-a355-07e1d9aeff46"
       },
@@ -13,7 +13,7 @@ require('./app/index.js').handler({
         "created": "2017-09-08T13:22:52Z",
         "STATE": "_BROWSE_STORIES",
         "offsetInMilliseconds": 0,
-        "updated": "2017-09-08T17:15:32Z",
+        "updated": "2017-09-08T17:38:40Z",
         "currentIndex": 0,
         "currentHeadlines": [
           {
@@ -624,7 +624,7 @@ require('./app/index.js').handler({
     },
     "request": {
       "type": "IntentRequest",
-      "requestId": "EdwRequestId.9cde21e5-2c23-40be-b4d9-c190862cc4d7",
+      "requestId": "EdwRequestId.ce4c15b2-4315-4573-bbe1-3532c705bd36",
       "intent": {
         "name": "FullStoryIntent",
         "slots": {
@@ -634,7 +634,7 @@ require('./app/index.js').handler({
         }
       },
       "locale": "de-DE",
-      "timestamp": "2017-09-08T17:15:51Z"
+      "timestamp": "2017-09-08T17:39:10Z"
     },
     "context": {
       "AudioPlayer": {

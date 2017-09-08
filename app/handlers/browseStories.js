@@ -151,6 +151,8 @@ let controller = {
         cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
       }
 
+      storyText = 'Hallo Welt'
+
       outputSpeech = strings.replaceStoryText(outputSpeech, storyText)
       cardTitle = strings.replaceHeadline(cardTitle, headline)
       cardContent = strings.replaceStoryText(cardContent, storyText)
