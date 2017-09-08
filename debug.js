@@ -1,7 +1,7 @@
 require('./app/index.js').handler({
     "session": {
       "new": false,
-      "sessionId": "SessionId.bca64e90-3af3-4822-8936-bf16d223edcb",
+      "sessionId": "SessionId.b11281ce-f7d5-47b9-9f91-9a240fdad2b6",
       "application": {
         "applicationId": "amzn1.ask.skill.e8b30761-2f5b-421e-a355-07e1d9aeff46"
       },
@@ -9,13 +9,33 @@ require('./app/index.js').handler({
         "currentCategory": "sport",
         "previousCateogry": "sport",
         "prevOutputMode": "_ASK",
-        "prevOutputSpeech": "Es gibt 30 neue Artikel in der Rubrik sport. Der erste Artikel lautet: \n\t\t\tInterview: \"Dardai macht einen sehr guten Job\". Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
+        "prevOutputSpeech": "Es gibt 30 neue Artikel in der Rubrik sport. Der erste Artikel lautet: \n\t\t\tHertha BSC: Die Zeit ist reif für einen Sieg gegen Werder. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
         "created": "2017-09-08T13:22:52Z",
         "STATE": "_BROWSE_STORIES",
         "offsetInMilliseconds": 0,
-        "updated": "2017-09-08T14:10:46Z",
+        "updated": "2017-09-08T17:15:32Z",
         "currentIndex": 0,
         "currentHeadlines": [
+          {
+            "title": "\n\t\t\tHertha BSC: Die Zeit ist reif für einen Sieg gegen Werder",
+            "description": "\n\t\t\tPal Dardai hat Hertha als Cheftrainer zu neuer Blüte geführt. Eins fehlt dem Ungar jedoch: ein Erfolg gegen Bremen.",
+            "link": "https://www.morgenpost.de/sport/hertha/article211860457/Die-Zeit-ist-reif-fuer-einen-Sieg-gegen-Werder.html",
+            "guid": {
+              "_": "211860457",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Hertha",
+            "pubDate": "Fri, 08 Sep 2017 17:35:00 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/sport/crop211860455/3020568455-w260-cv3_2/gettyimages-674788834-364a9cc0-df94-4254-8713-b8849a536a9a.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
           {
             "title": "\n\t\t\tInterview: \"Dardai macht einen sehr guten Job\"",
             "description": "\n\t\t\tAlexander Nouri spricht über sein erstes Jahr als Trainer von Werder Bremen und lobt den kommenden Gegner Hertha BSC.",
@@ -38,7 +58,7 @@ require('./app/index.js').handler({
           },
           {
             "title": "\n\t\t\tAchtelfinale gegen Frankreich: \"Keine Angst\": Schröder & Co. wollen neue EM-Überraschung",
-            "description": "\n\t\t\tNach dem Rücktritt der Superstars will die neue Generation um Dennis Schröder ihre Ära im EM-Achtelfinale starten. ",
+            "description": "\n\t\t\tDeutschland gegen Frankreich - das war lange das Duell von Dirk Nowitzki mit Tony Parker. Nach dem Rücktritt der Superstars will die neue Generation um Dennis Schröder ihre Ära im EM-Achtelfinale starten. Sicherheitsbedenken äußern der Jungstar und Kollegen nicht.",
             "link": "https://www.morgenpost.de/sport/alba/article211856367/Keine-Angst-Schroeder-Co-wollen-neue-EM-Ueberraschung.html",
             "guid": {
               "_": "211856367",
@@ -47,10 +67,10 @@ require('./app/index.js').handler({
               }
             },
             "category": "Alba",
-            "pubDate": "Fri, 08 Sep 2017 11:36:12 +0200",
+            "pubDate": "Fri, 08 Sep 2017 16:59:41 +0200",
             "enclosure": {
               "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211856365/0100561165-w260-cv3_2/Wollen-Favorit-Frankeich-im-EM-Achtelfinale-zu-Fall-bringen-Daniel-Theis-l-und-Dennis-Schroeder.jpg",
+                "url": "https://img.morgenpost.de/img/incoming/crop211856365/1850566798-w260-cv3_2/Wollen-Favorit-Frankeich-im-EM-Achtelfinale-zu-Fall-bringen-Daniel-Theis-l-und-Dennis-Schroeder.jpg",
                 "length": "0",
                 "type": "image/jpeg"
               }
@@ -317,20 +337,160 @@ require('./app/index.js').handler({
             }
           },
           {
-            "title": "\n\t\t\tHandball: Füchse gegen Magdeburg ist das Duell mit dem Lieblingsfeind",
-            "description": "\n\t\t\tDie Füchse und der SC Magdeburg verfolgen eine ähnliche Klub-Politik und schätzen sich. Nationalspieler Paul Drux feiert sein Comeback.",
-            "link": "https://www.morgenpost.de/sport/fuechse/article211826369/Fuechse-gegen-Magdeburg-ist-auch-das-Duell-mit-dem-Lieblingsfeind.html",
+            "title": "\n\t\t\tHertha BSC: Die Zeit ist reif für einen Sieg gegen Werder",
+            "description": "\n\t\t\tPal Dardai hat Hertha als Cheftrainer zu neuer Blüte geführt. Eins fehlt dem Ungar jedoch: ein Erfolg gegen Bremen.",
+            "link": "https://www.morgenpost.de/sport/hertha/article211860457/Die-Zeit-ist-reif-fuer-einen-Sieg-gegen-Werder.html",
             "guid": {
-              "_": "211826369",
+              "_": "211860457",
               "$": {
                 "isPermaLink": "false"
               }
             },
-            "category": "Füchse",
-            "pubDate": "Wed, 06 Sep 2017 06:00:00 +0200",
+            "category": "Hertha",
+            "pubDate": "Fri, 08 Sep 2017 17:35:00 +0200",
             "enclosure": {
               "$": {
-                "url": "https://img.morgenpost.de/img/sport/crop211826367/8340567294-w260-cv3_2/91036272-af7e4591-94e0-422e-b712-3f4f4ef31038.jpg",
+                "url": "https://img.morgenpost.de/img/sport/crop211860455/3020568455-w260-cv3_2/gettyimages-674788834-364a9cc0-df94-4254-8713-b8849a536a9a.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tAchtelfinale gegen Frankreich: \"Keine Angst\": Schröder & Co. wollen neue EM-Überraschung",
+            "description": "\n\t\t\tDeutschland gegen Frankreich - das war lange das Duell von Dirk Nowitzki mit Tony Parker. Nach dem Rücktritt der Superstars will die neue Generation um Dennis Schröder ihre Ära im EM-Achtelfinale starten. Sicherheitsbedenken äußern der Jungstar und Kollegen nicht.",
+            "link": "https://www.morgenpost.de/sport/alba/article211856367/Keine-Angst-Schroeder-Co-wollen-neue-EM-Ueberraschung.html",
+            "guid": {
+              "_": "211856367",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Alba",
+            "pubDate": "Fri, 08 Sep 2017 16:59:41 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/incoming/crop211856365/1850566798-w260-cv3_2/Wollen-Favorit-Frankeich-im-EM-Achtelfinale-zu-Fall-bringen-Daniel-Theis-l-und-Dennis-Schroeder.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tEx-Wolfsburger: Perišić verlängert bis 2022 bei Inter Mailand",
+            "description": "\n\t\t\tEx-Bundesligaprofi Ivan Perišić hat seinen Vertrag beim italienischen Erstligisten Inter Mailand bis 2022 verlängert. Dies teilte der Traditionsclub mit. Der...",
+            "link": "https://www.morgenpost.de/sport/fussball/article211859729/Perisic-verlaengert-bis-2022-bei-Inter-Mailand.html",
+            "guid": {
+              "_": "211859729",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Fußball",
+            "pubDate": "Fri, 08 Sep 2017 16:58:01 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/incoming/crop211859727/0670564959-w260-cv3_2/Inter-Mailand-hat-Ivan-Perisic-bis-2022-an-sich-gebunden.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\t#tsgfcb: Rudy ist Bayerns neuer Ordner im Mittelfeld ",
+            "description": "\n\t\t\tDer Ex-Hoffenheimer hat sich in München etabliert. Nun trifft er auf seinen alten Klub und warnt vor Julian Nagelsmann.",
+            "link": "https://www.morgenpost.de/sport/article211859513/Rudy-ist-Bayerns-neuer-Ordner-im-Mittelfeld.html",
+            "guid": {
+              "_": "211859513",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Sport",
+            "pubDate": "Fri, 08 Sep 2017 16:50:00 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/sport/crop211859511/3590561968-w260-cv3_2/94557105-46c2c2c3-8bf5-4dee-9c5e-5def9bcc9ca5.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tTechnik-Probleme: Eurosport zahlt Kunden nach Panne zehn Euro Entschädigung",
+            "description": "\n\t\t\tDas Spiel Köln gegen den HSV bekamen viele Fußballfans nicht zu sehen, weil der Eurosport-Player streikte. Jetzt soll es Geld geben.",
+            "link": "https://www.morgenpost.de/sport/article211719419/Eurosport-zahlt-Kunden-nach-Panne-10-Euro-Entschaedigung.html",
+            "guid": {
+              "_": "211719419",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Sport",
+            "pubDate": "Fri, 08 Sep 2017 16:43:00 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/vermischtes/crop211719417/1740567801-w260-cv3_2/eurosport-player-7c97206f-9f12-40a4-b754-4aea9e15cc54.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tFußball-Übertragung: Eurosport verspricht nach Player-Panne Entschädigung",
+            "description": "\n\t\t\tStatt Fußball ein blauer Bildschirm: Wer mit Eurosport Bundesliga gucken wollte, wurde enttäuscht. Der Sender verspricht Entschädigung.",
+            "link": "https://www.morgenpost.de/sport/article211713149/Nach-Player-Panne-Eurosport-verspricht-eine-Wiedergutmachung.html",
+            "guid": {
+              "_": "211713149",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Sport",
+            "pubDate": "Fri, 08 Sep 2017 16:42:00 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/tv/crop211713147/1070568088-w260-cv3_2/GYI-839057872.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tBasketball-EM: Weiss: Deutsche Fans sollen nach Istanbul kommen",
+            "description": "\n\t\t\tIngo Weiss, Präsident des Deutschen Basketball Bunds, hat Zuschauer zu Reisen zur EM-Endrunde nach Istanbul ermuntert.  \"Ich habe Verständnis dafür, dass der...",
+            "link": "https://www.morgenpost.de/sport/alba/article211859333/Weiss-Deutsche-Fans-sollen-nach-Istanbul-kommen.html",
+            "guid": {
+              "_": "211859333",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Alba",
+            "pubDate": "Fri, 08 Sep 2017 16:41:17 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/incoming/crop211859331/0540567598-w260-cv3_2/Der-Praesident-des-Deutschen-Basketball-Bundes-Ingo-Weiss-wuenscht-sich-Fan-Untersatuetzuung-in-Istanbul.jpg",
+                "length": "0",
+                "type": "image/jpeg"
+              }
+            }
+          },
+          {
+            "title": "\n\t\t\tNicht im Kader: Klopp verzichtet gegen Manchester City auf Coutinho",
+            "description": "\n\t\t\tTrainer Jürgen Klopp vom FC Liverpool verzichtet im Premier-League-Auswärtsspiel bei Manchester City am Samstag (13.30 Uhr) auf Offensivspieler Philippe...",
+            "link": "https://www.morgenpost.de/sport/fussball/article211858785/Klopp-verzichtet-gegen-Manchester-City-auf-Coutinho.html",
+            "guid": {
+              "_": "211858785",
+              "$": {
+                "isPermaLink": "false"
+              }
+            },
+            "category": "Fußball",
+            "pubDate": "Fri, 08 Sep 2017 16:03:39 +0200",
+            "enclosure": {
+              "$": {
+                "url": "https://img.morgenpost.de/img/incoming/crop211858783/4650564485-w260-cv3_2/Philippe-Coutinho-wird-am-Wochenende-beim-FC-Liverpool-nicht-zum-Einsatz-kommen.jpg",
                 "length": "0",
                 "type": "image/jpeg"
               }
@@ -351,26 +511,6 @@ require('./app/index.js').handler({
             "enclosure": {
               "$": {
                 "url": "https://img.morgenpost.de/img/incoming/crop211856889/9540565095-w260-cv3_2/Hat-ein-Disziplinarverfahren-Englands-Alli-Dele.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tAchtelfinale gegen Frankreich: \"Keine Angst\": Schröder & Co. wollen neue EM-Überraschung",
-            "description": "\n\t\t\tNach dem Rücktritt der Superstars will die neue Generation um Dennis Schröder ihre Ära im EM-Achtelfinale starten. ",
-            "link": "https://www.morgenpost.de/sport/alba/article211856367/Keine-Angst-Schroeder-Co-wollen-neue-EM-Ueberraschung.html",
-            "guid": {
-              "_": "211856367",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Alba",
-            "pubDate": "Fri, 08 Sep 2017 11:36:12 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211856365/0100561165-w260-cv3_2/Wollen-Favorit-Frankeich-im-EM-Achtelfinale-zu-Fall-bringen-Daniel-Theis-l-und-Dennis-Schroeder.jpg",
                 "length": "0",
                 "type": "image/jpeg"
               }
@@ -475,146 +615,6 @@ require('./app/index.js').handler({
                 "type": "image/jpeg"
               }
             }
-          },
-          {
-            "title": "\n\t\t\tBundesliga: FC Schalke 04 gegen VfB Stuttgart live im TV & Stream",
-            "description": "\n\t\t\t3. Spieltag: Am Sonnabend empfängt Schalke 04 VfB Stuttgart. Alle Infos zu TV-Termin, Livestream im Internet & Radioübertragung.",
-            "link": "https://www.morgenpost.de/sport/article211791595/FC-Schalke-04-gegen-VfB-Stuttgart-live-im-TV-Stream.html",
-            "guid": {
-              "_": "211791595",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Sport",
-            "pubDate": "Fri, 08 Sep 2017 05:30:00 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/sport/crop211595305/6180561486-w260-cv3_2/GYI-831394834.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tBasketball-EM: Von \"bitter\" bis \"Wahnsinn\": Klassiker gegen Frankreich",
-            "description": "\n\t\t\tEs ist ein Duell mit Geschichte: Frankreich ist für die deutschen Basketballer ein bekannter Gegner. Dennis Schröder & Co. wollen über die Équipe Tricolore ins EM-Viertelfinale. Die Bilanz der Vergangenheit sieht eher negativ aus.",
-            "link": "https://www.morgenpost.de/sport/alba/article211854799/Von-bitter-bis-Wahnsinn-Klassiker-gegen-Frankreich.html",
-            "guid": {
-              "_": "211854799",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Alba",
-            "pubDate": "Fri, 08 Sep 2017 04:48:00 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211854797/4300567824-w260-cv3_2/Suoerstars-unter-sich-DBB-Star-Dirk-Nowitzki-r-im-Duell-mit-Frankreichs-Tony-Parker-bei-der-EM-2011.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tTitelverteidiger souverän: Spaniens Pau Gasol bester Werfer der EM-Geschichte",
-            "description": "\n\t\t\tSpaniens Basketball-Superstar Pau Gasol hat zum Abschluss der Vorrunde die Führung in der ewigen Punkteliste bei Europameisterschaften übernommen.  Der...",
-            "link": "https://www.morgenpost.de/sport/alba/article211850347/Spaniener-Pau-Gasol-bester-Werfer-der-EM-Geschichte.html",
-            "guid": {
-              "_": "211850347",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Alba",
-            "pubDate": "Thu, 07 Sep 2017 21:48:58 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211850345/5530561735-w260-cv3_2/Bester-Werfer-der-Basketball-EM-Geschichte-Pau-Gasol-aus-Spanien.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tHandball: Fäth wirft die Füchse zum furiosen Derby-Sieg",
-            "description": "\n\t\t\tDer Nationalspieler überragt mit zehn Toren beim 30:26-Erfolg der Berliner Handballer in Magdeburg. Füchse sind jetzt Tabellenzweiter.",
-            "link": "https://www.morgenpost.de/sport/fuechse/article211852643/Faeth-wirft-die-Fuechse-zum-furiosen-Derby-Sieg.html",
-            "guid": {
-              "_": "211852643",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Füchse",
-            "pubDate": "Thu, 07 Sep 2017 21:35:00 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/sport/crop211852641/4380564553-w260-cv3_2/imago-sp-0907-20250002-29803203.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tPositives Echo: Englische Premier League verkürzt Transferperiode",
-            "description": "\n\t\t\tEine Verkürzung der Transferperiode für Fußballer wird in vielen Ländern diskutiert. In England hat die Premier League als erste europäische Top-Liga nun Fakten geschaffen. Positive Reaktionen kommen bereits aus der Bundesliga.",
-            "link": "https://www.morgenpost.de/sport/fussball/article211848437/Englische-Premier-League-verkuerzt-Transferperiode.html",
-            "guid": {
-              "_": "211848437",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Fußball",
-            "pubDate": "Thu, 07 Sep 2017 19:48:00 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211848435/863056114-w260-cv3_2/Wechselte-nach-Saisonbeginn-vom-FC-Bayern-zu-Swansea-City-Europameister-Renato-Sanches.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tPremier League: Ibrahimovic kokettiert mit neuer Rückennummer: \"War nie weg\"",
-            "description": "\n\t\t\tDer schwedische Stürmerstar Zlatan Ibrahimovic kokettiert mit seiner Neuverpflichtung durch den englischen Rekordmeister Manchester United.  \"Ich war nie weg,...",
-            "link": "https://www.morgenpost.de/sport/fussball/article211851141/Ibrahimovic-kokettiert-mit-neuer-Rueckennummer-War-nie-weg.html",
-            "guid": {
-              "_": "211851141",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Fußball",
-            "pubDate": "Thu, 07 Sep 2017 18:36:42 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211851139/0780564941-w260-cv3_2/Kuenftig-mit-der-zehn-statt-der-neun-auf-dem-Ruecken-Zlatan-Ibrahimovic-von-Manchester-United.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
-          },
-          {
-            "title": "\n\t\t\tFan-Vorkommnisse in Prag: DFB-Präsident Grindel: FIFA-Entscheidung in Demut abwarten",
-            "description": "\n\t\t\tDFB-Präsident Reinhard Grindel will keine Prognose über eine mögliche Bestrafung des Deutschen Fußball-Bundes durch den Weltverband FIFA wegen der...",
-            "link": "https://www.morgenpost.de/sport/fussball/article211850825/DFB-Praesident-Grindel-FIFA-Entscheidung-in-Demut-abwarten.html",
-            "guid": {
-              "_": "211850825",
-              "$": {
-                "isPermaLink": "false"
-              }
-            },
-            "category": "Fußball",
-            "pubDate": "Thu, 07 Sep 2017 18:20:13 +0200",
-            "enclosure": {
-              "$": {
-                "url": "https://img.morgenpost.de/img/incoming/crop211850823/6540568739-w260-cv3_2/Muss-wegen-der-Fan-Vorfaelle-in-Prag-mit-einer-Strafe-durch-die-FIFA-rechnen-DFB-Praesident-Reinhard-Grindel.jpg",
-                "length": "0",
-                "type": "image/jpeg"
-              }
-            }
           }
         ]
       },
@@ -624,7 +624,7 @@ require('./app/index.js').handler({
     },
     "request": {
       "type": "IntentRequest",
-      "requestId": "EdwRequestId.b71fe2d7-8f27-4505-9e7c-b578d5b3938b",
+      "requestId": "EdwRequestId.9cde21e5-2c23-40be-b4d9-c190862cc4d7",
       "intent": {
         "name": "FullStoryIntent",
         "slots": {
@@ -634,7 +634,7 @@ require('./app/index.js').handler({
         }
       },
       "locale": "de-DE",
-      "timestamp": "2017-09-08T14:16:05Z"
+      "timestamp": "2017-09-08T17:15:51Z"
     },
     "context": {
       "AudioPlayer": {
