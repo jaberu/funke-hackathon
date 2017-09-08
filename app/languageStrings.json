@@ -5,10 +5,10 @@
       "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder lasse dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "WELCOME_BACK_NO_CATEGORY" : {
-      "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" />Möchtest du die Rubriken durchsuchen, oder die neuesten Nachrichten erhalten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "DIALOGUE" : "<say-as interpret-as=\"interjection\">Willkommen</say-as> zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" />Möchtest du die Rubriken durchsuchen, oder die neuesten Nachrichten erhalten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "WELCOME_BACK_CATEGORY" : {
-      "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Möchtest du Nachrichten aus %%CATEGORY_NAME%% hören, die Rubriken durchsuchen, oder die aktuellsten Nachrichten hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "DIALOGUE" : "<say-as interpret-as=\"interjection\">Willkommen</say-as> zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Möchtest du Nachrichten aus %%CATEGORY_NAME%% hören, die Rubriken durchsuchen, oder die aktuellsten Nachrichten hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "CATEGORY_LIST" : {
       "DIALOGUE" : "Folgende Rubriken biete ich dir: %%CATEGORY_LIST%%. Welche Rubrik möchtest du hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
