@@ -58,7 +58,7 @@
       "CARD_CONTENT" : "%%STORY_TEXT%%"
     },
     "GENERAL_ERROR" : {
-      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Möchtest du Rubriken durchsuchen oder die neusten Artikel hören?"
+      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Möchtest du stattdessen Rubriken durchsuchen oder die neuesten Artikel hören?"
     },
     "CATEGORY_SELECTION_ERROR" : {
       "DIALOGUE" : "Tut mir leid. Ich habe das nicht verstanden. Ich kann dir die Überschriften von diesen Rubriken vorlesen: %%CATEGORY_LIST%%, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
