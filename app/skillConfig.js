@@ -5,7 +5,7 @@ module.exports = {
     COMPANY_NAME: 'Funke Digital',
     SKILL_NAME: 'Berliner Morgenpost News',
     BASE_URL: 'https://www.morgenpost.de/',
-    LATEST_URI: 'latest',
+    LATEST_URI: '?service=Rss',
     SUPPORTED_CATEGORIES: {
         politik: {
             URI: 'politik/?service=Rss',
