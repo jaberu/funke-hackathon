@@ -2,7 +2,7 @@
   "de-DE": {
     "WELCOME_FIRST_VISIT" : {
       "DIALOGUE" : "Willkommen zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Ich biete dir 2 Möglichkeiten: du kannst Rubriken durchsuchen, oder du kannst dir die neueste Nachricht vorlesen lassen. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
-      "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder lasse dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun?"
+      "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder lasse dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "WELCOME_BACK_NO_CATEGORY" : {
       "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Möchtest du die Rubriken durchsuchen, oder die neuesten Nachrichten erhalten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
@@ -32,7 +32,7 @@
     },
     "STORY_LAST" : {
       "DIALOGUE" : "Der neueste Artikel aus der Rubrik %%CATEGORY_NAME%% lautet: %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
-      "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "REPROMPT" : "Ich kann dir den ganzen Artikel vorlesen zu %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "STORY_BEGINNING_ERROR" : {
       "DIALOGUE" : "Dies ist die Liste an Artikeln. Die %%ORDINAL%% Überschrift lautet: %%HEADLINE%%. Möchtest du dne ganzen Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
@@ -46,7 +46,7 @@
       "DIALOGUE" : "Es gibt keine Artikel in dieser Rubrik. Du kannst aus folgenden Rubriken wählen: %%CATEGORY_LIST%%. Welche Rubrik möchten Sie wählen? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "STORY_FULL_STORY" : {
-      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des Artikels. Möchtest du zur nächsten Überschrift, Rubriken durchstöbern, oder die neusten Nachrichten hören?",
+      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des Artikels. Möchtest du zur nächsten Überschrift, Rubriken durchstöbern, oder die neusten Nachrichten hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
       "REPROMPT" : "Möchtest du zum nächsten Artikel, Rubriken durchstöbern, oder die neusten Nachrichten hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
       "CARD_TITLE" : "%%HEADLINE%%",
       "CARD_CONTENT" : "%%STORY_TEXT%%"
