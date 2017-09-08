@@ -5,8 +5,8 @@ const constants = require('../util/constants')
 const alexaResponse = require('../util/alexaResponse')
 const skillConfig = require('../skillConfig')
 const api = require('../util/api')
-const async = require('asyncawait/async');
-const await = require('asyncawait/await');
+const asyncX = require('asyncawait/async');
+const awaitX = require('asyncawait/await');
 
 let controller = {
   isValidBrowse: function () {
@@ -119,12 +119,12 @@ let controller = {
     }
   },
   readStory: function () {
-    return async(function () {
+    return asyncX(function () {
             // read the full story text, then give the user options
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
       let headline = currentStory.title
       let xmli = currentStory.link.replace('.html', '.xmli')
-      let storyText = await(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
+      let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
       // let storyText = currentStory.description
       let cardImageObject = null
 
