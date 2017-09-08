@@ -90,6 +90,6 @@ module.exports = (url, includeList, excludeList) => {
       return item.replace(/\s\s+/g, ' ')
     })
     .then((response) => {
-      return `<speak><p>${response.join('</p><p>')}</p></speak>`
+      return `<p>${response.join('</p><p>')}</p>`
     })
 }
