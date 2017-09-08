@@ -124,7 +124,7 @@ let controller = {
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
       let headline = currentStory.title.replace(/\s\s+/g, ' ')
       let xmli = currentStory.link.replace('.html', '.xmli')
-      let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
+      let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media', 'hl1', 'hl2', 'hl3']))
       // let storyText = currentStory.description
       let cardImageObject = null
 
@@ -150,8 +150,6 @@ let controller = {
         cardTitle = strings.get(this).STORY_FULL_STORY.CARD_TITLE
         cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
       }
-
-      storyText = 'Hallo Welt'
 
       outputSpeech = strings.replaceStoryText(outputSpeech, storyText)
       cardTitle = strings.replaceHeadline(cardTitle, headline)
