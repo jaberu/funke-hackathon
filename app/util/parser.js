@@ -17,7 +17,7 @@ const request = require('superagent')
 const sax = require('sax')
 const Promise = require('bluebird')
 
-function parseBackendResponse (response, tagList, excludeList) {
+function parseBackendResponse (response) {
   return new Promise((resolve, reject) => {
     let parser = sax.parser(true)
     let buffer = null
@@ -25,6 +25,7 @@ function parseBackendResponse (response, tagList, excludeList) {
     let result = []
     let ignore = false
     let ignoreTag = null
+    let media = []
 
     parser.onerror = function (e) {
       return reject(e)
@@ -35,10 +36,13 @@ function parseBackendResponse (response, tagList, excludeList) {
       }
     }
     parser.onopentag = function (node) {
-      if (excludeList.indexOf(node.name) !== -1) {
+      if (node.name === "media") {
+          if (node.attr("display-option") === "brightcove") {
+              media[] = node.attr("video-id")
+          }
         ignore = true
         ignoreTag = node.name
-      } else if (!ignore && tagList.indexOf(node.name) !== -1) {
+      } else if (!ignore && (node.name === 'body.content' || node.name === 'p')) {
         currentTag = node.name
         buffer = ''
       }
@@ -64,7 +68,10 @@ function parseBackendResponse (response, tagList, excludeList) {
     // };
     parser.onend = function () {
       // parser stream is done, and ready to have more stuff written to it.
-      return resolve(result)
+      return resolve({
+            text : result,
+            videos : media
+          })
     }
 
     parser.write(response).close()

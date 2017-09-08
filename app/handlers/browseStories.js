@@ -124,40 +124,46 @@ let controller = {
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
       let headline = currentStory.title.replace(/\s\s+/g, ' ')
       let xmli = currentStory.link.replace('.html', '.xmli')
-      let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
+      let story = awaitX(require('../util/parser')(xmli))
       // let storyText = currentStory.description
       let cardImageObject = null
 
-            // include an image object only if both image urls are provided
-      if (currentStory.enclosureSmall && currentStory.enclosureLarge) {
-        cardImageObject = {
-          smallImageUrl: currentStory.enclosureSmall.$.url,
-          largeImageUrl: currentStory.enclosureLarge.$.url
-        }
-      }
-
-      let lastStory = this.attributes.currentHeadlines.length - 1
-      let outputSpeech, repromptSpeech, cardTitle, cardContent
-
-      if (this.attributes.currentIndex === lastStory) {
-        outputSpeech = strings.get(this).STORY_FULL_STORY_LAST.DIALOGUE
-        repromptSpeech = strings.get(this).STORY_FULL_STORY_LAST.REPROMPT
-        cardTitle = strings.get(this).STORY_FULL_STORY_LAST.CARD_TITLE
-        cardContent = strings.get(this).STORY_FULL_STORY_LAST.CARD_CONTENT
+      if (story.videos) {
+          outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
+          alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {
-        outputSpeech = strings.get(this).STORY_FULL_STORY.DIALOGUE
-        repromptSpeech = strings.get(this).STORY_FULL_STORY.REPROMPT
-        cardTitle = strings.get(this).STORY_FULL_STORY.CARD_TITLE
-        cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
+
+          // include an image object only if both image urls are provided
+          if (currentStory.enclosureSmall && currentStory.enclosureLarge) {
+              cardImageObject = {
+                  smallImageUrl: currentStory.enclosureSmall.$.url,
+                  largeImageUrl: currentStory.enclosureLarge.$.url
+              }
+          }
+
+          let lastStory = this.attributes.currentHeadlines.length - 1
+          let outputSpeech, repromptSpeech, cardTitle, cardContent
+
+          if (this.attributes.currentIndex === lastStory) {
+              outputSpeech = strings.get(this).STORY_FULL_STORY_LAST.DIALOGUE
+              repromptSpeech = strings.get(this).STORY_FULL_STORY_LAST.REPROMPT
+              cardTitle = strings.get(this).STORY_FULL_STORY_LAST.CARD_TITLE
+              cardContent = strings.get(this).STORY_FULL_STORY_LAST.CARD_CONTENT
+          } else {
+              outputSpeech = strings.get(this).STORY_FULL_STORY.DIALOGUE
+              repromptSpeech = strings.get(this).STORY_FULL_STORY.REPROMPT
+              cardTitle = strings.get(this).STORY_FULL_STORY.CARD_TITLE
+              cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
+          }
+
+          story = {text: 'Hallo Welt'}
+
+          outputSpeech = strings.replaceStoryText(outputSpeech, story.text)
+          cardTitle = strings.replaceHeadline(cardTitle, headline)
+          cardContent = strings.replaceStoryText(cardContent, story.text)
+
+          alexaResponse.askWithCard(outputSpeech, repromptSpeech, cardTitle, cardContent, cardImageObject).call(this)
       }
-
-      storyText = 'Hallo Welt'
-
-      outputSpeech = strings.replaceStoryText(outputSpeech, storyText)
-      cardTitle = strings.replaceHeadline(cardTitle, headline)
-      cardContent = strings.replaceStoryText(cardContent, storyText)
-
-      alexaResponse.askWithCard(outputSpeech, repromptSpeech, cardTitle, cardContent, cardImageObject).call(this)
     })
   },
   askForCategory: function () {
