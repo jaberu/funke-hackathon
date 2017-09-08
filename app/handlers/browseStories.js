@@ -228,8 +228,15 @@ let browseStories = {
   },
   latestNews: function () {
         // change state and forward request to MAIN_MENU LatestNewsIntent
-    this.handler.state = constants.states.MAIN_MENU
-    this.emitWithState('LatestNewsIntent')
+    //this.handler.state = constants.states.MAIN_MENU
+    //this.emitWithState('LatestNewsIntent')
+
+    if (!intent.slots) {
+      intent.slots = {}
+    }
+    
+    intent.slots.category = "neuste"
+    browseStories()
   },
   help: function () {
         // offer the user context sensitive browsing help

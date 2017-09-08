@@ -31,7 +31,10 @@ let mainMenu = {
     },
     latestNews: function () {
         // change state and start audio file playback
-        this.handler.state = constants.states.AUDIO_PLAYBACK;
+        //this.handler.state = constants.states.AUDIO_PLAYBACK;
+        //this.emitWithState('LatestNewsIntent');
+        // change state and start browsing stories
+        this.handler.state = constants.states.BROWSE_STORIES;
         this.emitWithState('LatestNewsIntent');
     },
     browseStories: function () {
