@@ -5,8 +5,6 @@ const constants = require('../util/constants')
 const alexaResponse = require('../util/alexaResponse')
 const skillConfig = require('../skillConfig')
 const api = require('../util/api')
-const asyncX = require('asyncawait/async');
-const awaitX = require('asyncawait/await');
 
 let controller = {
   isValidBrowse: function () {
@@ -119,13 +117,11 @@ let controller = {
     }
   },
   readStory: function () {
-    return asyncX(function () {
+    return function () {
             // read the full story text, then give the user options
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
       let headline = currentStory.title
-      let xmli = currentStory.link.replace('.html', '.xmli')
-      let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
-      // let storyText = currentStory.description
+      let storyText = currentStory.description
       let cardImageObject = null
 
             // include an image object only if both image urls are provided
@@ -156,7 +152,7 @@ let controller = {
       cardContent = strings.replaceStoryText(cardContent, storyText)
 
       alexaResponse.askWithCard(outputSpeech, repromptSpeech, cardTitle, cardContent, cardImageObject).call(this)
-    })
+    }
   },
   askForCategory: function () {
     return function () {
@@ -261,12 +257,12 @@ let browseStories = {
         }
         let onSuccess = function (headlines) {
           if (headlines.length < 1) {
-            controller.noStoriesError().call(that)
-          } else {
-            that.attributes.currentIndex = 0
-            that.attributes.currentHeadlines = headlines
-            controller.readHeadlineWithCount().call(that)
-          }
+                controller.noStoriesError().call(that)
+              } else {
+                that.attributes.currentIndex = 0
+                that.attributes.currentHeadlines = headlines
+                controller.readHeadlineWithCount().call(that)
+              }
         }
         api.fetch(categoryValue.category, onSuccess, onError).call(that)
       }
