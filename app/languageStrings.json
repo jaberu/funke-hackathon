@@ -11,16 +11,16 @@
       "DIALOGUE" : "Willkommen zurück zur %%SKILL_NAME%%. Möchtest du Nachrichten aus %%CATEGORY_NAME%% hören, die Rubriken durchsuchen, oder die aktuellsten Nachrichten hören?"
     },
     "CATEGORY_LIST" : {
-      "DIALOGUE" : "Folgende Rubriken biete ich dir: %%CATEGORY_LIST%%. Welche Rubrik möchtest du hören? <break time=\"200ms\"/> <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/funkenews-sound-newssplitt.mp3\" />"
+      "DIALOGUE" : "Folgende Rubriken biete ich dir: %%CATEGORY_LIST%%. Welche Rubrik möchtest du hören? <break time=\"200ms\"/> <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Berliner Morgenpost-sound-newssplitt.mp3\" />"
     },
     "CATEGORY_ERROR" : {
       "DIALOGUE" : "Entschuldige ich habe keine Artikel in der Kategorie %%CATEGORY_NAME%% gefunden. Du kannst aus folgenden Rubriken %%CATEGORY_NAME%% wählen. Welche möchtest du hören?",
       "REPROMPT": "Bitte wähle eine Rubrik aus %%CATEGORY_NAME%%. Oder ich lese dir die neueste Nachricht vor. Was möchtest du tun?"
     },
     "LATEST_NEWS" : {
-      "DIALOGUE" : "Hier ist die neueste Nachricht von Funkenews:",
+      "DIALOGUE" : "Hier ist die neueste Nachricht der Berliner Morgenpost",
       "CARD_TITLE" : "Neueste Nachricht",
-      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von Funkenews. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
+      "CARD_CONTENT" : "Du bist nun in den neuesten Nachrichten von Berliner Morgenpost. Du kannst das Vorlesen jederzeit unterbrechen oder anhalten."
     },
     "STORY_LIST_START" : {
       "DIALOGUE" : "Es gibt %%COUNT%% neue Artikel in der Rubrik %%CATEGORY_NAME%%. Der erste Artikel lautet: %%HEADLINE%%. Möchtest du den ganzen Artikel hören oder weiter zum nächsten?",
@@ -46,26 +46,26 @@
       "DIALOGUE" : "Es gibt keine Überschriften in dieser Rubrik. Sie können aus folgenden Rubriken wählen: %%CATEGORY_LIST%%. Welche Rubrik möchten Sie wählen?"
     },
     "STORY_FULL_STORY" : {
-      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des Artikels. Möchtest du zur nächsten Überschrift, Rubriken durchstöbern, oder die neusten Nachrichten hören?",
-      "REPROMPT" : "Möchtest du zur nächsten Überschrift, Rubriken durchstöbern, oder die neusten Nachrichten hören?",
+      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des Artikels. Möchtest du zur nächsten Überschrift, Rubriken durchsuchen, oder die neusten Nachrichten hören?",
+      "REPROMPT" : "Möchtest du zur nächsten Überschrift, Rubriken durchsuchen, oder die neusten Nachrichten hören?",
       "CARD_TITLE" : "%%HEADLINE%%",
       "CARD_CONTENT" : "%%STORY_TEXT%%"
     },
     "STORY_FULL_STORY_LAST" : {
-      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des letzten Artikels. Du kannst Rubriken durchstöbern, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
-      "REPROMPT" : "Du kannst Rubriken durchstöbern, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
+      "DIALOGUE" : "Hier ist der komplette Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des letzten Artikels. Du kannst Rubriken durchsuchen, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
+      "REPROMPT" : "Du kannst Rubriken durchsuchen, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
       "CARD_TITLE" : "%%HEADLINE%%",
       "CARD_CONTENT" : "%%STORY_TEXT%%"
     },
     "GENERAL_ERROR" : {
-      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Möchtest du Rubriken durchstöbern oder die neusten Artikel hören?"
+      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Möchtest du Rubriken durchsuchen oder die neusten Artikel hören?"
     },
     "CATEGORY_SELECTION_ERROR" : {
       "DIALOGUE" : "Tut mir leid. Ich habe das nicht verstanden. Ich kann dir die Überschriften von diesen Rubriken vorlesen: %%CATEGORY_LIST%%, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?",
       "REPROMPT" : "Bitte wähle eine Rubrik aus Berlin, Politik oder Wirtschaft, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun?"
     },
     "AUDIO_PLAYBACK_ERROR" : {
-      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du die Rubriken durchstöbern."
+      "DIALOGUE" : "Tut mir leid. Ich kann das nicht für dich tun. Sobald der neuste Artikel beendet ist, kannst du die Rubriken durchsuchen."
     },
     "AUDIO_PLAYBACK_PREVIOUS_STORY_ERROR" : {
       "DIALOGUE" : "Es tut mir leid. Es gibt keinen vorigen Artikel."
@@ -74,10 +74,10 @@
       "DIALOGUE" : "Es tut mir leid. Es gibt keine weiteren neusten Artikel."
     },
     "STORY_FETCH_ERROR" : {
-      "DIALOGUE" : "Es tut mir leid, aber ich kann die Artikel für diese Rubrik nicht erreichen. Möchtest du die Rubriken durchstöbern oder dir neusten Artikel hören?"
+      "DIALOGUE" : "Es tut mir leid, aber ich kann die Artikel für diese Rubrik nicht erreichen. Möchtest du die Rubriken durchsuchen oder dir neusten Artikel hören?"
     },
     "HELP_START" : {
-      "DIALOGUE" : "Mit %%SKILL_NAME%% kannst du einfach ale neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchstöbern oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
+      "DIALOGUE" : "Mit %%SKILL_NAME%% kannst du einfach ale neuen Artikel hören, an denen du interessiert bist. Du kannst Rubriken durchsuchen oder die neusten Artikel hören. Versuche etwas zu sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
     },
     "HELP_BROWSE" : {
       "DIALOGUE" : "%%SKILL_NAME%% erlaubt dir eine Rubrik von Überschriften festzulegen, an denen du interessiert bist. Du kannst aus diesen Rubriken auswählen: Berlin, Politik oder Wirtschaft. Oder falls du dir die neusten Nachrichten anhören möchtest, kannst du etwas sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
