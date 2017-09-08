@@ -122,7 +122,7 @@ let controller = {
     return asyncX(function () {
             // read the full story text, then give the user options
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
-      let headline = currentStory.title
+      let headline = currentStory.title.replace(/\s\s+/g, ' ')
       let xmli = currentStory.link.replace('.html', '.xmli')
       let storyText = awaitX(require('../util/parser')(xmli, ['body.content', 'p'], ['media']))
       // let storyText = currentStory.description
