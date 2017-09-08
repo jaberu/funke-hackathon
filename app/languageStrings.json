@@ -83,7 +83,7 @@
       "DIALOGUE" : "Funke News erlaubt dir eine Rubrik von Überschriften festzulegen, an denen du interessiert bist. Du kannst aus diesen Rubriken auswählen: Berlin, Politik oder Wirtschaft. Oder falls du dir die neusten Nachrichten anhören möchtest, kannst du etwas sagen wie durchstöbere Nachrichten oder was sind die neusten. Was möchtest du tun?"
     },
     "HELP_BROWSE_GUIDE" : {
-      "DIALOGUE" : "Funke News erlaubt die durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger um dich zwischen den Überschriften zu bewegen, oder du kannst sagen: lese mir den kompletten Artikel vor oder mehr hören um den kompletten Artikel zu hören. Was möchtest du tun?"
+      "DIALOGUE" : "Funke News erlaubt dir durch eine Liste von Artikeln für die Rubrik die du wählst zu navigieren. Du kannst etwas wie nächster oder voriger um dich zwischen den Überschriften zu bewegen, oder du kannst sagen: lese mir den kompletten Artikel vor oder mehr hören um den kompletten Artikel zu hören. Was möchtest du tun?"
     },
     "EXIT_CONFIRM" : {
       "DIALOGUE" : "Okay danke dass du Funke News benutzt hast. Auf Wiedersehen!"
