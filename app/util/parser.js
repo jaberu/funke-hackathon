@@ -18,7 +18,7 @@ const sax = require('sax')
 const Promise = require('bluebird')
 const xmlescape = require('xml-escape')
 
-function parseBackendResponse (response, tagList, excludeList) {
+function parseBackendResponse (response) {
   return new Promise((resolve, reject) => {
     let parser = sax.parser(true)
     let buffer = null
@@ -26,6 +26,7 @@ function parseBackendResponse (response, tagList, excludeList) {
     let result = []
     let ignore = false
     let ignoreTag = null
+    let media = []
 
     parser.onerror = function (e) {
       return reject(e)
@@ -36,10 +37,13 @@ function parseBackendResponse (response, tagList, excludeList) {
       }
     }
     parser.onopentag = function (node) {
-      if (excludeList.indexOf(node.name) !== -1) {
+      if (node.name === 'media') {
+        if (node.attributes['display-option'] === 'brightcove') {
+          media.push(node.attr('video-id'))
+        }
         ignore = true
         ignoreTag = node.name
-      } else if (!ignore && tagList.indexOf(node.name) !== -1) {
+      } else if (!ignore && (node.name === 'body.content' || node.name === 'p')) {
         currentTag = node.name
         buffer = ''
       }
@@ -65,7 +69,10 @@ function parseBackendResponse (response, tagList, excludeList) {
     // };
     parser.onend = function () {
       // parser stream is done, and ready to have more stuff written to it.
-      return resolve(result)
+      return resolve({
+        text: result,
+        videos: media
+      })
     }
 
     parser.write(response).close()
@@ -85,17 +92,22 @@ module.exports = (url, includeList, excludeList) => {
       })
   })
     .then((response) => {
-      return parseBackendResponse(response, includeList, excludeList)
-    })
-    .map((item) => {
-      let ret = item.replace(/\s\s+/g, ' ')
-      ret = ret.replace(/„/g, '')
-      ret = ret.replace(/“/g, '')
-      return xmlescape(ret)
+      return parseBackendResponse(response)
     })
     .then((response) => {
-      // let arrRes = response.join('</p><p>')
-      // return `<p>${arrRes}</p>`
-      return response[0]
+      let parsedText = response.text.map((item) => {
+        let ret = item.replace(/\s\s+/g, ' ')
+        return xmlescape(ret)
+      })
+      // parsedText = parsedText.join('</p><p>')
+      if (parsedText.length > 1) {
+        parsedText = `${parsedText[0]}</p><p>${parsedText[1]}`
+      } else if (parsedText.length === 1) {
+        parsedText = parsedText[0]
+      }
+      return {
+        videos: response.videos,
+        text: `<p>${parsedText}</p>`
+      }
     })
 }
