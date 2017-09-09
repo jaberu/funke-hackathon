@@ -50,7 +50,7 @@
       "REPROMPT" : "Möchtest du zum nächsten Artikel, Rubriken durchsuchen, oder die neusten Nachrichten hören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
       "CARD_TITLE" : "%%HEADLINE%%",
       "CARD_CONTENT" : "%%STORY_TEXT%%",
-      "VIDEO" : "Der Artikel enthält ein Video. Falls du das Video ansehen magst, sage Video ansehen. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "VIDEO" : "Der Artikel enthält ein Video. Willst du die Videos ansehen oder den Artikel anhören? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "STORY_FULL_STORY_LAST" : {
       "DIALOGUE" : "Hier ist der Artikel: %%STORY_TEXT%%. <break time=\"500ms\"/> Ende des Artikelauszugs. Den gesamten Artikel findest du auf www.morgenpost.de. Du kannst Rubriken durchsuchen, oder Ich kann dir die neuesten Artikel vorlesen. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
