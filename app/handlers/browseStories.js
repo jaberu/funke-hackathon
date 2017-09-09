@@ -197,7 +197,7 @@ let controller = {
       }))
         .then(() => {
           let outputSpeech = 'videos werden abgespielt'
-          alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+          alexaResponse.tell(outputSpeech, outputSpeech).call(this)
         })
     }
   },
