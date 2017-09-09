@@ -5,8 +5,8 @@ const constants = require('../util/constants')
 const alexaResponse = require('../util/alexaResponse')
 const skillConfig = require('../skillConfig')
 const api = require('../util/api')
-const asyncX = require('asyncawait/async');
-const awaitX = require('asyncawait/await');
+const asyncX = require('asyncawait/async')
+const awaitX = require('asyncawait/await')
 
 let controller = {
   isValidBrowse: function () {
@@ -122,56 +122,56 @@ let controller = {
     return asyncX(function () {
             // read the full story text, then give the user options
       let currentStory = this.attributes.currentHeadlines[this.attributes.currentIndex]
-      let headline = currentStory.title.replace(/\s\s+/g, ' ')
+      // let headline = currentStory.title.replace(/\s\s+/g, ' ')
       let xmli = currentStory.link.replace('.html', '.xmli')
       let story = awaitX(require('../util/parser')(xmli))
       // let storyText = currentStory.description
-      let cardImageObject = null
 
       if (story.videos.length > 0) {
-          outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
-          this.attributes.currentVideos = story.videos
-          alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+        let outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
+        this.attributes.currentVideos = story.videos
+        alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {
+        // let cardImageObject = null
+        // include an image object only if both image urls are provided
+        // if (currentStory.enclosureSmall && currentStory.enclosureLarge) {
+        //   cardImageObject = {
+        //     smallImageUrl: currentStory.enclosureSmall.$.url,
+        //     largeImageUrl: currentStory.enclosureLarge.$.url
+        //   }
+        // }
 
-          // include an image object only if both image urls are provided
-          if (currentStory.enclosureSmall && currentStory.enclosureLarge) {
-              cardImageObject = {
-                  smallImageUrl: currentStory.enclosureSmall.$.url,
-                  largeImageUrl: currentStory.enclosureLarge.$.url
-              }
-          }
+        let lastStory = this.attributes.currentHeadlines.length - 1
+        let outputSpeech, repromptSpeech
+        // , cardTitle, cardContent
 
-          let lastStory = this.attributes.currentHeadlines.length - 1
-          let outputSpeech, repromptSpeech, cardTitle, cardContent
+        if (this.attributes.currentIndex === lastStory) {
+          outputSpeech = strings.get(this).STORY_FULL_STORY_LAST.DIALOGUE
+          repromptSpeech = strings.get(this).STORY_FULL_STORY_LAST.REPROMPT
+          // cardTitle = strings.get(this).STORY_FULL_STORY_LAST.CARD_TITLE
+          // cardContent = strings.get(this).STORY_FULL_STORY_LAST.CARD_CONTENT
+        } else {
+          outputSpeech = strings.get(this).STORY_FULL_STORY.DIALOGUE
+          repromptSpeech = strings.get(this).STORY_FULL_STORY.REPROMPT
+          // cardTitle = strings.get(this).STORY_FULL_STORY.CARD_TITLE
+          // cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
+        }
 
-          if (this.attributes.currentIndex === lastStory) {
-              outputSpeech = strings.get(this).STORY_FULL_STORY_LAST.DIALOGUE
-              repromptSpeech = strings.get(this).STORY_FULL_STORY_LAST.REPROMPT
-              cardTitle = strings.get(this).STORY_FULL_STORY_LAST.CARD_TITLE
-              cardContent = strings.get(this).STORY_FULL_STORY_LAST.CARD_CONTENT
-          } else {
-              outputSpeech = strings.get(this).STORY_FULL_STORY.DIALOGUE
-              repromptSpeech = strings.get(this).STORY_FULL_STORY.REPROMPT
-              cardTitle = strings.get(this).STORY_FULL_STORY.CARD_TITLE
-              cardContent = strings.get(this).STORY_FULL_STORY.CARD_CONTENT
-          }
+        outputSpeech = strings.replaceStoryText(outputSpeech, story.text)
+        // cardTitle = strings.replaceHeadline(cardTitle, headline)
+        // cardContent = strings.replaceStoryText(cardContent, story.text)
 
-          outputSpeech = strings.replaceStoryText(outputSpeech, story.text)
-          cardTitle = strings.replaceHeadline(cardTitle, headline)
-          cardContent = strings.replaceStoryText(cardContent, story.text)
-
-          alexaResponse.ask(outputSpeech, repromptSpeech).call(this)
+        alexaResponse.ask(outputSpeech, repromptSpeech).call(this)
       }
     })
   },
   showVideo: function () {
     return function () {
-        // read the full story text, then give the user options
-        let currentVideos = this.attributes.currentVideos
+      // read the full story text, then give the user options
+      let currentVideos = this.attributes.currentVideos
 
-        outputSpeech = currentVideos.join(',')
-        alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+      let outputSpeech = currentVideos.join(',')
+      alexaResponse.ask(outputSpeech, outputSpeech).call(this)
     }
   },
   askForCategory: function () {
@@ -300,7 +300,7 @@ let browseStories = {
         controller.readHeadlineWithCount().call(that)
       }
     }
-    api.fetch("neueste Nachrichten", onSuccess, onError).call(that)
+    api.fetch('neueste nachrichten', onSuccess, onError).call(that)
   },
   next: function () {
         // if the user is browsing, move to next story,
@@ -309,7 +309,7 @@ let browseStories = {
       let lastStory = this.attributes.currentHeadlines.length - 1
       if (this.attributes.currentIndex < lastStory) {
         this.attributes.currentIndex += 1
-        if (this.attributes.currentIndex == lastStory) {
+        if (this.attributes.currentIndex === lastStory) {
           controller.readLastHeadline().call(this)
         } else {
           controller.readHeadline().call(this)
