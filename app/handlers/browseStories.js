@@ -175,7 +175,7 @@ let controller = {
     return function () {
       // read the full story text, then give the user options
       let currentVideos = this.attributes.currentVideos
-      Promise.all(currentVideos.map((video) => {
+      return Promise.all(currentVideos.map((video) => {
         let params = {
           QueueUrl: 'https://sqs.eu-west-1.amazonaws.com/379071070134/video',
           MessageBody: video,
