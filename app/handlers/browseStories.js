@@ -105,9 +105,11 @@ let controller = {
             // let the user know they cannot go back
       let ordinal = text.sayAsOrdinal(this.attributes.currentIndex + 1)
       let headline = this.attributes.currentHeadlines[this.attributes.currentIndex].title
+      let categoryName = this.attributes.currentCategory
       let outputSpeech = strings.get(this).STORY_BEGINNING_ERROR.DIALOGUE
       outputSpeech = strings.replaceOrdinal(outputSpeech, ordinal)
       outputSpeech = strings.replaceHeadline(outputSpeech, headline)
+      outputSpeech = strings.replaceCategoryName(outputSpeech, categoryName)
       let repromptSpeech = strings.get(this).STORY_BEGINNING_ERROR.REPROMPT
       repromptSpeech = strings.replaceHeadline(repromptSpeech, headline)
       alexaResponse.ask(outputSpeech, repromptSpeech).call(this)

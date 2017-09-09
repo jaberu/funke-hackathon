@@ -1,8 +1,8 @@
 {
   "de-DE": {
     "WELCOME_FIRST_VISIT" : {
-      "DIALOGUE" : "Willkommen zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Ich biete dir 2 Möglichkeiten: du kannst Rubriken durchsuchen, oder du kannst dir die neueste Nachricht vorlesen lassen. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
-      "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder lasse dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
+      "DIALOGUE" : "Willkommen auf der %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" /> Ich biete dir 2 Möglichkeiten: du kannst Rubriken durchsuchen, oder du kannst dir die neueste Nachricht vorlesen lassen. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
+      "REPROMPT" : "Du kannst Nachrichtenrubriken durchsuchen für neue Artikel, oder dir die neuesten Nachrichten vorlesen lassen. Sage einfach Artikel durchsuchen oder was ist die neueste Nachricht. Was möchtest du tun? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
     },
     "WELCOME_BACK_NO_CATEGORY" : {
       "DIALOGUE" : "<say-as interpret-as=\"interjection\">Willkommen</say-as> zurück zur %%SKILL_NAME%%. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_start.mp3\" />Möchtest du die Rubriken durchsuchen, oder die neuesten Nachrichten erhalten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />"
