@@ -137,7 +137,7 @@ module.exports = {
     'LaunchRequest': audio.launchRequest,
     'CategoryOnlyIntent': audio.browseStories,
     'BrowseStoriesIntent': audio.browseStories,
-    'LatestNewsIntent': audio.start,
+    'LatestNewsIntent': audio.latestNews,
     'AMAZON.StartOverIntent': audio.start,
     'AMAZON.RepeatIntent': audio.start,
     'AMAZON.PauseIntent': audio.pause,
