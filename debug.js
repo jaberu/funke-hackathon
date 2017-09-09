@@ -1,23 +1,28 @@
 require('./app/index.js').handler({
     "session": {
       "new": false,
-      "sessionId": "SessionId.bc604780-e516-4897-86a1-a799e1e98d26",
+      "sessionId": "SessionId.93d991e7-be4c-4a10-a24d-dec11ae67a0c",
       "application": {
         "applicationId": "amzn1.ask.skill.e8b30761-2f5b-421e-a355-07e1d9aeff46"
       },
       "attributes": {
+        "currentVideos": [
+          "5569090750001",
+          "5566662475001",
+          "5567878101001"
+        ],
         "currentCategory": "video",
         "previousCateogry": "video",
         "prevOutputMode": "_ASK",
-        "prevOutputSpeech": "Es gibt 1 neue Artikel in der Rubrik video. Der erste Artikel lautet: \n\t\t\tHurrikan: \"Irma\" – Ganz Florida bereitet sich auf Evakuierung vor. Möchtest du den Artikel hören oder weiter zum nächsten? <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
+        "prevOutputSpeech": "Der Artikel enthält Videos. Falls du die Videos ansehen magst, sage Videos ansehen. <audio src=\"https://s3-eu-west-1.amazonaws.com/funke-hackathon/Alexa-News-App_select.mp3\" />",
         "created": "2017-09-08T13:22:52Z",
         "STATE": "_BROWSE_STORIES",
         "offsetInMilliseconds": 0,
-        "updated": "2017-09-08T19:29:06Z",
+        "updated": "2017-09-09T09:07:00Z",
         "currentIndex": 0,
         "currentHeadlines": [
           {
-            "title": "\n\t\t\tHurrikan: \"Irma\" – Ganz Florida bereitet sich auf Evakuierung vor",
+            "title": "\n\t\t\tHurrikan: \"Irma\" erreicht Kuba – Florida bereitet Evakuierung vor",
             "description": "\n\t\t\tAuf einigen Karibikinseln sind nach Hurrikan „Irma“ Aufräumarbeiten angelaufen. In Florida rechnet man inzwischen mit dem Schlimmsten.",
             "link": "https://www.morgenpost.de/vermischtes/article211854891/Hurrikan-Irma-tobt-in-der-Karibik-USA-bereiten-sich-vor.html",
             "guid": {
@@ -27,10 +32,10 @@ require('./app/index.js').handler({
               }
             },
             "category": "Aus aller Welt",
-            "pubDate": "Fri, 08 Sep 2017 06:40:00 +0200",
+            "pubDate": "Fri, 08 Sep 2017 22:20:00 +0200",
             "enclosure": {
               "$": {
-                "url": "https://img.morgenpost.de/img/vermischtes/crop211859241/7070561412-w260-cv3_2/14964E0065AB220C.jpg",
+                "url": "https://img.morgenpost.de/img/vermischtes/crop211859241/4390569502-w260-cv3_2/14964E0065AB220C.jpg",
                 "length": "0",
                 "type": "image/jpeg"
               }
@@ -44,9 +49,9 @@ require('./app/index.js').handler({
     },
     "request": {
       "type": "IntentRequest",
-      "requestId": "EdwRequestId.fe82dd8c-7856-4080-bd5a-5d166ba7ba22",
+      "requestId": "EdwRequestId.51cba45a-7977-437c-bfa9-bdef579d6c3d",
       "intent": {
-        "name": "FullStoryIntent",
+        "name": "ShowVideoIntent",
         "slots": {
           "desire": {
             "name": "desire"
@@ -54,7 +59,7 @@ require('./app/index.js').handler({
         }
       },
       "locale": "de-DE",
-      "timestamp": "2017-09-08T20:09:20Z"
+      "timestamp": "2017-09-09T09:07:36Z"
     },
     "context": {
       "AudioPlayer": {

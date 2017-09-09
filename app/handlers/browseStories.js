@@ -12,6 +12,7 @@ const sqs = new AWS.SQS({
   apiVersion: '2012-11-05',
   region: 'eu-west-1'
 })
+const Promise = require('bluebird')
 
 let controller = {
   isValidBrowse: function () {
@@ -174,22 +175,25 @@ let controller = {
     return function () {
       // read the full story text, then give the user options
       let currentVideos = this.attributes.currentVideos
-      currentVideos.map((video) => {
+      Promise.all(currentVideos.map((video) => {
         let params = {
           QueueUrl: 'https://sqs.eu-west-1.amazonaws.com/379071070134/video',
           MessageBody: video,
           DelaySeconds: 0
         }
-        sqs.sendMessage(params, (err, data) => {
-          if (err) {
-            console.error(err)
-          }
-          console.log(data)
+        return new Promise((resolve, reject) => {
+          sqs.sendMessage(params, (err, data) => {
+            if (err) {
+              reject(err)
+            }
+            resolve(data)
+          })
         })
-      })
-
-      let outputSpeech = 'videos werden abgespielt'
-      alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+      }))
+        .then(() => {
+          let outputSpeech = 'videos werden abgespielt'
+          alexaResponse.ask(outputSpeech, outputSpeech).call(this)
+        })
     }
   },
   askForCategory: function () {
