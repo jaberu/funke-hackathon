@@ -120,7 +120,16 @@ let audio = {
         this.response.audioPlayerStop();
         this.response.audioPlayerClearQueue('CLEAR_ALL');
         this.emitWithState('BrowseStoriesIntent');
-    }
+    },
+    latestNews: function () {
+        // change state and forward request to MAIN_MENU BrowseStoriesIntent
+        this.handler.state = constants.states.MAIN_MENU;
+        this.attributes.offsetInMilliseconds = 0;
+        this.attributes.lastAudio = undefined;
+        this.response.audioPlayerStop();
+        this.response.audioPlayerClearQueue('CLEAR_ALL');
+        this.emitWithState('LatestNewsIntent');
+    },
 };
 
 module.exports = {
