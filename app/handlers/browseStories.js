@@ -135,9 +135,10 @@ let controller = {
       let story = awaitX(require('../util/parser')(xmli))
       // let storyText = currentStory.description
 
-      if (story.videos.length > 0 && ! this.attributes.videoShown) {
+      if (story.videos.length > 0 && !this.attributes.videoShown) {
         let outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
         this.attributes.currentVideos = story.videos
+          this.attributes.videoShown = true
         alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {
         // let cardImageObject = null
@@ -177,7 +178,6 @@ let controller = {
     return function () {
       // read the full story text, then give the user options
       let currentVideos = this.attributes.currentVideos
-      this.attributes.videoShown = true
       return Promise.all(currentVideos.map((video) => {
         let params = {
           QueueUrl: 'https://sqs.eu-west-1.amazonaws.com/379071070134/video',
