@@ -319,6 +319,7 @@ let browseStories = {
       } else {
         that.attributes.currentIndex = 0
         that.attributes.currentHeadlines = headlines
+        that.attributes.currentCategory = 'neueste nachrichten'
         controller.readHeadlineWithCount().call(that)
       }
     }
