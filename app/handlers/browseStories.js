@@ -138,7 +138,7 @@ let controller = {
       if (story.videos.length > 0 && !this.attributes.videoShown) {
         let outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
         this.attributes.currentVideos = story.videos
-          this.attributes.videoShown = true
+        this.attributes.videoShown = true
         alexaResponse.ask(outputSpeech, outputSpeech).call(this)
       } else {
         // let cardImageObject = null
@@ -339,6 +339,8 @@ let browseStories = {
     api.fetch('neueste nachrichten', onSuccess, onError).call(that)
   },
   next: function () {
+    this.attributes.currentVideos = undefined
+    this.attributes.videoShown = undefined
         // if the user is browsing, move to next story,
         // or let the user know they are on the last story
     if (controller.isValidBrowse().call(this)) {
@@ -358,6 +360,8 @@ let browseStories = {
     }
   },
   previous: function () {
+    this.attributes.currentVideos = undefined
+    this.attributes.videoShown = undefined
         // if the user is browsing, move to previous story,
         // or let the user know they are on the first story
     if (controller.isValidBrowse().call(this)) {
