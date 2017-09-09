@@ -53,6 +53,8 @@ let controller = {
       this.attributes.currentCategory = undefined
       this.attributes.currentHeadlines = undefined
       this.attributes.currentIndex = undefined
+      this.attributes.currentVideos = undefined
+      this.attributes.videoShown = undefined
       this.emitWithState('BrowseStoriesIntent')
     }
   },
@@ -133,7 +135,7 @@ let controller = {
       let story = awaitX(require('../util/parser')(xmli))
       // let storyText = currentStory.description
 
-      if (story.videos.length > 0) {
+      if (story.videos.length > 0 && ! this.attributes.videoShown) {
         let outputSpeech = strings.get(this).STORY_FULL_STORY.VIDEO
         this.attributes.currentVideos = story.videos
         alexaResponse.ask(outputSpeech, outputSpeech).call(this)
@@ -175,6 +177,7 @@ let controller = {
     return function () {
       // read the full story text, then give the user options
       let currentVideos = this.attributes.currentVideos
+      this.attributes.videoShown = true
       return Promise.all(currentVideos.map((video) => {
         let params = {
           QueueUrl: 'https://sqs.eu-west-1.amazonaws.com/379071070134/video',
@@ -202,6 +205,8 @@ let controller = {
       this.attributes.currentCategory = undefined
       this.attributes.currentHeadlines = undefined
       this.attributes.currentIndex = undefined
+      this.attributes.currentVideos = undefined
+      this.attributes.videoShown = undefined
       let outputSpeech = strings.get(this).CATEGORY_LIST.DIALOGUE
       alexaResponse.ask(outputSpeech, outputSpeech).call(this)
     }
@@ -212,6 +217,8 @@ let controller = {
       this.attributes.currentCategory = undefined
       this.attributes.currentHeadlines = undefined
       this.attributes.currentIndex = undefined
+      this.attributes.currentVideos = undefined
+      this.attributes.videoShown = undefined
       let outputSpeech = strings.get(this).CATEGORY_ERROR.DIALOGUE
       outputSpeech = strings.replaceCategoryName(outputSpeech, categoryName)
       let repromptSpeech = strings.get(this).CATEGORY_ERROR.REPROMPT
@@ -224,6 +231,8 @@ let controller = {
       this.attributes.currentCategory = undefined
       this.attributes.currentHeadlines = undefined
       this.attributes.currentIndex = undefined
+      this.attributes.currentVideos = undefined
+      this.attributes.videoShown = undefined
       let outputSpeech = strings.get(this).STORY_FETCH_ERROR.DIALOGUE
       alexaResponse.ask(outputSpeech, outputSpeech).call(this)
     }
@@ -234,6 +243,8 @@ let controller = {
       this.attributes.currentCategory = undefined
       this.attributes.currentHeadlines = undefined
       this.attributes.currentIndex = undefined
+      this.attributes.currentVideos = undefined
+      this.attributes.videoShown = undefined
       let outputSpeech = strings.get(this).STORY_LIST_ZERO.DIALOGUE
       alexaResponse.ask(outputSpeech, outputSpeech).call(this)
     }
@@ -259,6 +270,8 @@ let browseStories = {
     let outputSpeech = strings.get(this).EXIT_CONFIRM.DIALOGUE
     this.attributes.currentHeadlines = undefined
     this.attributes.currentIndex = undefined
+    this.attributes.currentVideos = undefined
+    this.attributes.videoShown = undefined
     alexaResponse.tell(outputSpeech).call(this)
   },
   unhandled: function () {
